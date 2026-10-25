@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="night" data-tone="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>弦外拾音 · 鹭仙 — 收录喜欢的音乐</title>
+  <meta name="description" content="鹭仙的音乐分区「弦外拾音」，第一个专栏「幻想音帖」收录《飞翔于宇宙的不可思议巫女》《兔已着陆》《风神少女》《宇佐大人的白旗》《活泼纯情小姑娘的冒险》《广有射怪鸟事》《少女绮想曲》，可直接在网页播放。">
+  <meta name="author" content="鹭仙 Luxian">
+  <meta name="theme-color" content="#08070d">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://luxian120.github.io/music.html">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/avatar.jpg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="鹭仙 · Luxian">
+  <meta property="og:title" content="弦外拾音 · 鹭仙 — 收录喜欢的音乐">
+  <meta property="og:description" content="第一个专栏「幻想音帖」：七首来自东方 Project 的旋律，点击即可播放。">
+  <meta property="og:url" content="https://luxian120.github.io/music.html">
+  <meta property="og:image" content="https://luxian120.github.io/assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="弦外拾音 · 鹭仙">
+  <meta name="twitter:description" content="第一个专栏「幻想音帖」：七首来自东方 Project 的旋律，点击即可播放。">
+  <meta name="twitter:image" content="https://luxian120.github.io/assets/og-cover.png">
+
+  <script>
+    (function () {
+      try {
+        var moods = {
+          day: ['light', '#f5efe5'],
+          rain: ['light', '#e6eff3'],
+          night: ['dark', '#08070d'],
+          bloom: ['light', '#f7eef3']
+        };
+        var saved = localStorage.getItem('luxian-mood');
+        if (!moods[saved]) {
+          var legacy = localStorage.getItem('luxian-theme');
+          saved = legacy === 'light' ? 'day' : legacy === 'dark' ? 'night' : 'night';
+        }
+        if (!moods[saved]) saved = 'night';
+        document.documentElement.setAttribute('data-theme', saved);
+        document.documentElement.setAttribute('data-tone', moods[saved][0]);
+        document.documentElement.style.colorScheme = moods[saved][0] === 'dark' ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', moods[saved][1]);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="music.css">
+</head>
+<body class="music-page">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <svg class="music-symbols" aria-hidden="true" width="0" height="0">
+    <defs>
+      <symbol id="cover-fantasy" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="cf-bg" x1="0" y1="0" x2="600" y2="600" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#11282a"/><stop offset=".5" stop-color="#0a171b"/><stop offset="1" stop-color="#071013"/>
+          </linearGradient>
+          <radialGradient id="cf-sun" cx="50%" cy="46%" r="50%">
+            <stop stop-color="#d85b56"/><stop offset=".7" stop-color="#a8353e"/><stop offset="1" stop-color="#7d2732"/>
+          </radialGradient>
+          <filter id="cf-glow" x="-80%" y="-80%" width="260%" height="260%">
+            <feGaussianBlur stdDeviation="10" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <rect width="600" height="600" fill="url(#cf-bg)"/>
+        <g stroke="#d9c2a4" stroke-opacity=".13" fill="none">
+          <path d="M0 92h600M0 132h600M0 468h600M0 508h600"/>
+          <circle cx="300" cy="290" r="242" stroke-dasharray="2 10"/>
+          <circle cx="300" cy="290" r="196"/>
+        </g>
+        <g filter="url(#cf-glow)">
+          <circle cx="300" cy="250" r="148" fill="url(#cf-sun)" opacity=".9"/>
+          <circle cx="300" cy="250" r="172" fill="none" stroke="#f0b7a5" stroke-opacity=".24"/>
+        </g>
+        <g fill="none" stroke="#f1d6a8" stroke-linecap="round">
+          <path d="M32 290c78-50 118-49 166-12s104 34 179-16 120-46 186-3" stroke-opacity=".42" stroke-width="1.4"/>
+          <path d="M-12 334c88-55 134-49 185-8s112 33 188-19 132-41 190 4" stroke-opacity=".22"/>
+          <path d="M54 370c68-38 122-30 166 4s98 27 164-8" stroke-opacity=".15"/>
+        </g>
+        <g fill="#d8c2aa">
+          <path d="M132 252h336v17H132Z"/>
+          <path d="M154 282h292v12H154Z" opacity=".82"/>
+          <path d="M178 294h18v196h-18ZM404 294h18v196h-18Z"/>
+          <path d="M154 484h92v14h-92ZM354 484h92v14h-92Z" opacity=".8"/>
+        </g>
+        <g fill="none" stroke="#e7c879" stroke-opacity=".62" stroke-width="2">
+          <path d="M66 448c8-64 30-104 52-130M84 446c7-54 24-88 46-112M504 440c-7-62-28-102-51-128M486 446c-6-54-25-88-47-111"/>
+          <g fill="#e7c879" stroke="none" opacity=".8">
+            <ellipse cx="118" cy="316" rx="7" ry="15" transform="rotate(35 118 316)"/>
+            <ellipse cx="98" cy="350" rx="6" ry="13" transform="rotate(28 98 350)"/>
+            <ellipse cx="478" cy="316" rx="7" ry="15" transform="rotate(-35 478 316)"/>
+            <ellipse cx="498" cy="350" rx="6" ry="13" transform="rotate(-28 498 350)"/>
+          </g>
+        </g>
+        <g fill="#f6e9d4">
+          <circle cx="462" cy="112" r="3.4"/>
+          <circle cx="474" cy="106" r="3"/>
+          <path d="M466 112V92M478 106V86" fill="none" stroke="#f6e9d4" stroke-width="3"/>
+        </g>
+        <text x="200" y="76" fill="#f2d9b7" fill-opacity=".58" font-family="Georgia, serif" font-size="11" letter-spacing="4">FANTASY NOTES</text>
+        <rect x="18" y="18" width="564" height="564" fill="none" stroke="#f2d9b7" stroke-opacity=".24"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="主导航">
+      <a class="brand" href="index.html" aria-label="鹭仙 Luxian，返回首页">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="24" height="24"></span>
+        <span class="brand-name"><strong>鹭仙</strong><small>LUXIAN</small></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html"><span>01</span>首页</a>
+        <a href="index.html#about"><span>02</span>关于</a>
+        <a class="nav-worlds" href="worlds.html"><span>03</span>番剧世界</a>
+        <a class="nav-music is-active" href="music.html" aria-current="page"><span>04</span>弦外拾音</a>
+        <a href="index.html#contact"><span>05</span>联系</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-button github-link" href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 上查看鹭仙">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.07.78 2.15v3.2c0 .3.21.66.8.55A11.5 11.5 0 0 0 12 .7Z"/></svg>
+        </a>
+        <div class="mood-picker" data-mood-picker>
+          <button class="icon-button mood-toggle" type="button" aria-label="切换心情主题" aria-haspopup="true" aria-controls="mood-menu" aria-expanded="false" title="切换心情主题">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.4a1.7 1.7 0 0 0 1-3.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4A8.8 8.8 0 0 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="7.5" cy="10" r="1.2" fill="currentColor"/><circle cx="10.5" cy="6.8" r="1.2" fill="currentColor"/><circle cx="15" cy="7" r="1.2" fill="currentColor"/><circle cx="17.2" cy="11" r="1.2" fill="currentColor"/></svg>
+          </button>
+          <div class="mood-menu" id="mood-menu" role="menu" aria-label="心情主题" hidden>
+            <div class="mood-menu-head"><span>MOOD</span><span>心情主题</span></div>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="day"><span class="mood-swatch" style="--swatch:#d9873d"></span><span class="mood-name">晴<small>DAYLIGHT</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="rain"><span class="mood-swatch" style="--swatch:#5e9db8"></span><span class="mood-name">雨<small>RAIN</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="true" data-mood="night"><span class="mood-swatch" style="--swatch:#a78bfa"></span><span class="mood-name">夜<small>MIDNIGHT</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="bloom"><span class="mood-swatch" style="--swatch:#d778a6"></span><span class="mood-name">花<small>BLOOM</small></span><span class="mood-check">✓</span></button>
+          </div>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <p class="mobile-kicker">MENU <span>/</span> 目录</p>
+      <nav class="mobile-nav" aria-label="移动端导航">
+        <a href="index.html"><span>01</span>首页</a>
+        <a href="index.html#about"><span>02</span>关于</a>
+        <a href="worlds.html"><span>03</span>番剧世界</a>
+        <a href="music.html"><span>04</span>弦外拾音</a>
+        <a href="index.html#contact"><span>05</span>联系</a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <a href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        <p>ShanghaiTech University<br>Computer Science</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="music-hero" id="top">
+      <div class="container music-hero-inner">
+        <div class="music-hero-copy">
+          <p class="eyebrow reveal"><span class="status-dot"></span>SOUND ARCHIVE <span class="eyebrow-slash">/</span> 01</p>
+          <h1 class="music-title reveal">
+            <span class="music-title-cn">弦外拾音</span>
+            <small>OFF THE STRING</small>
+          </h1>
+          <p class="music-lead reveal">有些旋律不属于任何一张歌单。它们藏在风里、雨里、某个走神的下午里。<em>把耳机借你，</em>听一会儿。</p>
+
+          <div class="music-meta-row reveal">
+            <span class="music-meta"><span>COLUMNS</span><strong>01</strong></span>
+            <span class="music-meta"><span>TRACKS</span><strong>07</strong></span>
+            <span class="music-meta"><span>STATUS</span><strong>OPEN</strong></span>
+          </div>
+
+          <div class="music-hero-actions reveal">
+            <a class="button button-primary" href="#columns">进入专栏 <span>↓</span></a>
+            <small>点击曲目即可播放</small>
+          </div>
+        </div>
+
+        <div class="music-hero-art reveal" aria-hidden="true">
+          <span class="music-float-note music-float-note--a">♪</span>
+          <span class="music-float-note music-float-note--b">♫</span>
+          <span class="music-float-note music-float-note--c">·</span>
+          <svg class="music-disc" viewBox="0 0 520 520">
+            <defs>
+              <radialGradient id="disc-bg" cx="45%" cy="38%" r="72%">
+                <stop stop-color="#24202c"/><stop offset=".55" stop-color="#100e16"/><stop offset="1" stop-color="#06060a"/>
+              </radialGradient>
+              <linearGradient id="disc-label" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#f4e4ce"/><stop offset="1" stop-color="#d9bea5"/>
+              </linearGradient>
+              <filter id="disc-glow" x="-60%" y="-60%" width="220%" height="220%">
+                <feGaussianBlur stdDeviation="6" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <circle cx="260" cy="260" r="250" fill="url(#disc-bg)" stroke="#6b596a" stroke-opacity=".5"/>
+            <g class="disc-grooves" fill="none" stroke="#d9c9de" stroke-opacity=".17">
+              <circle cx="260" cy="260" r="228"/>
+              <circle cx="260" cy="260" r="215"/>
+              <circle cx="260" cy="260" r="202"/>
+              <circle cx="260" cy="260" r="189"/>
+              <circle cx="260" cy="260" r="176"/>
+              <circle cx="260" cy="260" r="163"/>
+              <circle cx="260" cy="260" r="150"/>
+              <circle cx="260" cy="260" r="137"/>
+              <circle cx="260" cy="260" r="124"/>
+              <circle cx="260" cy="260" r="111"/>
+              <path d="M34 210c58-60 144-88 226-88s168 28 226 88" stroke-opacity=".3"/>
+              <path d="M34 310c58 60 144 88 226 88s168-28 226-88" stroke-opacity=".3"/>
+            </g>
+            <g class="disc-highlight" fill="none" stroke="#f7d8e1" stroke-opacity=".18">
+              <path d="M74 130c42-31 101-51 168-56" stroke-width="2"/>
+              <path d="M287 386c49-6 91-24 122-48" stroke-width="1.2"/>
+            </g>
+            <g filter="url(#disc-glow)">
+              <circle cx="260" cy="260" r="92" fill="url(#disc-label)"/>
+              <circle cx="260" cy="260" r="92" fill="none" stroke="#f3d9b7" stroke-opacity=".6"/>
+              <circle cx="260" cy="260" r="9" fill="#171018"/>
+              <circle cx="260" cy="260" r="3.2" fill="#e9d4ba" opacity=".7"/>
+            </g>
+            <g fill="#8f303a">
+              <path d="M214 236h92v9h-92Z"/>
+              <path d="M223 253h74v7h-74Z"/>
+              <path d="M229 260h8v44h-8ZM283 260h8v44h-8Z"/>
+              <path d="M218 301h30v6h-30ZM272 301h30v6h-30Z"/>
+            </g>
+            <text x="260" y="229" text-anchor="middle" fill="#2a1a1a" font-family="'Songti SC', 'SimSun', serif" font-size="21" font-weight="600">幻想音帖</text>
+            <text x="260" y="344" text-anchor="middle" fill="#2a1a1a" fill-opacity=".58" font-family="monospace" font-size="5.5" letter-spacing="2.2">FANTASY NOTES</text>
+            <circle cx="260" cy="260" r="242" fill="none" stroke="#f4e4ce" stroke-opacity=".12"/>
+          </svg>
+          <span class="music-art-caption">TOUHOU / 01</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="music-columns" id="columns">
+      <div class="container">
+        <div class="music-section-head reveal">
+          <div>
+            <p class="eyebrow"><span class="status-dot"></span>COLUMNS <span class="eyebrow-slash">/</span> 专栏</p>
+            <h2>把喜欢的声音，<br>收进一个帖子里。</h2>
+          </div>
+          <p>每一帖是一个小小的声音抽屉。第一帖，来自东方 Project 的七首原曲。</p>
+        </div>
+
+        <button class="music-column-card reveal" type="button" data-open-column aria-haspopup="dialog" aria-controls="column-dialog">
+          <span class="music-column-cover" aria-hidden="true">
+            <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice"><use href="#cover-fantasy"></use></svg>
+            <span class="music-cover-meta"><span>COLUMN 01</span><strong>幻想音帖</strong></span>
+          </span>
+          <span class="music-column-copy">
+            <span class="music-column-kicker">FANTASY NOTES / 7 TRACKS</span>
+            <span class="music-column-title">幻想音帖</span>
+            <span class="music-column-desc">飞翔于宇宙的不可思议巫女、兔已着陆、风神少女、宇佐大人的白旗、活泼纯情小姑娘的冒险、广有射怪鸟事、少女绮想曲。七首来自东方 Project 的旋律，像风穿过稻田，也像深夜耳机里忽然亮起的一盏灯。</span>
+            <span class="music-column-tags"><span>东方 Project</span><span>上海爱丽丝幻乐团</span><span>7 TRACKS</span></span>
+            <span class="music-column-enter">进入专栏 <b>↗</b></span>
+          </span>
+        </button>
+
+        <p class="music-more">MORE COLUMNS / 更多专栏会在某个深夜里长出来。</p>
+      </div>
+    </section>
+
+    <section class="music-note">
+      <div class="container music-note-inner">
+        <p>“有些声音，听到了就已经很好了。”</p>
+        <span>弦外拾音 · OFF THE STRING</span>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="column-dialog" id="column-dialog" aria-labelledby="column-title">
+    <div class="column-shell">
+      <div class="column-art-panel" aria-hidden="true">
+        <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice"><use href="#cover-fantasy"></use></svg>
+        <div class="column-art-caption">
+          <span>COLUMN 01 / FANTASY NOTES</span>
+          <strong>幻想音帖</strong>
+          <small>TOUHOU PROJECT / 7 TRACKS</small>
+        </div>
+      </div>
+
+      <div class="column-content">
+        <button class="column-close" type="button" aria-label="关闭专栏">
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+
+        <p class="eyebrow">COLUMN 01 <span class="eyebrow-slash">/</span> 幻想音帖</p>
+        <h2 id="column-title">幻想音帖</h2>
+        <p class="column-intro">七首来自《东方 Project》原声音乐集的曲子。把音量调到舒服的位置，让风先吹一会儿。</p>
+
+        <div class="track-list" aria-label="幻想音帖曲目">
+          <button class="track" type="button" data-src="assets/music/cosmic-shrine-maiden.mp3" data-title="飞翔于宇宙的不可思议巫女" data-artist="宇宙を飛ぶ不思議な巫女 / 上海爱丽丝幻乐团" aria-label="播放 飞翔于宇宙的不可思议巫女">
+            <span class="track-index">01</span>
+            <span class="track-info"><strong>飞翔于宇宙的不可思议巫女</strong><small>宇宙を飛ぶ不思議な巫女 · 上海爱丽丝幻乐团</small></span>
+            <span class="track-time">--:--</span>
+            <span class="track-play" aria-hidden="true">
+              <svg class="track-icon-play" viewBox="0 0 16 16"><path d="M4.5 2.8v10.4L13 8 4.5 2.8Z" fill="currentColor"/></svg>
+              <svg class="track-icon-pause" viewBox="0 0 16 16"><path d="M4.5 2.8h2.6v10.4H4.5zM8.9 2.8h2.6v10.4H8.9z" fill="currentColor"/></svg>
+            </span>
+          </button>
+
+          <button class="track" type="button" data-src="assets/music/rabbit-landed.mp3" data-title="兔已着陆" data-artist="兎は舞い降りた / 上海爱丽丝幻乐团" aria-label="播放 兔已着陆">
+            <span class="track-index">02</span>
+            <span class="track-info"><strong>兔已着陆</strong><small>兎は舞い降りた · 上海爱丽丝幻乐团</small></span>
+            <span class="track-time">--:--</span>
+            <span class="track-play" aria-hidden="true">
+              <svg class="track-icon-play" viewBox="0 0 16 16"><path d="M4.5 2.8v10.4L13 8 4.5 2.8Z" fill="currentColor"/></svg>
+              <svg class="track-icon-pause" viewBox="0 0 16 16"><path d="M4.5 2.8h2.6v10.4H4.5zM8.9 2.8h2.6v10.4H8.9z" fill="currentColor"/></svg>
+            </span>
+          </button>
+
+          <button class="track" type="button" data-src="assets/music/wind-goddess.mp3" data-title="风神少女" data-artist="风神少女 (Short Version) / 上海爱丽丝幻乐团" aria-label="播放 风神少女">
+            <span class="track-index">03</span>
+            <span class="track-info"><strong>风神少女</strong><small>风神少女 (Short Version) · 上海爱丽丝幻乐团</small></span>
+            <span class="track-time">--:--</span>
+            <span class="track-play" aria-hidden="true">
+              <svg class="track-icon-play" viewBox="0 0 16 16"><path d="M4.5 2.8v10.4L13 8 4.5 2.8Z" fill="currentColor"/></svg>
+              <svg class="track-icon-pause" viewBox="0 0 16 16"><path d="M4.5 2.8h2.6v10.4H4.5zM8.9 2.8h2.6v10.4H8.9z" fill="currentColor"/></svg>
+            </span>
+          </button>
+
+          <button class="track" type="button" data-src="assets/music/usagi-white-flag.mp3" data-title="宇佐大人的白旗" data-artist="お宇佐さまの素い幡 / 上海爱丽丝幻乐团" aria-label="播放 宇佐大人的白旗">
+            <span class="track-index">04</span>
+            <span class="track-info"><strong>宇佐大人的白旗</strong><small>お宇佐さまの素い幡 · 上海爱丽丝幻乐团</small></span>
+            <span class="track-time">--:--</span>
+            <span class="track-play" aria-hidden="true">
+              <svg class="track-icon-play" viewBox="0 0 16 16"><path d="M4.5 2.8v10.4L13 8 4.5 2.8Z" fill="currentColor"/></svg>
+              <svg class="track-icon-pause" viewBox="0 0 16 16"><path d="M4.5 2.8h2.6v10.4H4.5zM8.9 2.8h2.6v10.4H8.9z" fill="currentColor"/></svg>
+            </span>
+          </button>
+
+          <button class="track" type="button" data-src="assets/music/otenba-adventure.mp3" data-title="活泼纯情小姑娘的冒险" data-artist="おてんば恋娘の冒険 / 上海爱丽丝幻乐团" aria-label="播放 活泼纯情小姑娘的冒险">
+            <span class="track-index">05</span>
+            <span class="track-info"><strong>活泼纯情小姑娘的冒险</strong><small>おてんば恋娘の冒険 · 上海爱丽丝幻乐团</small></span>
+            <span class="track-time">--:--</span>
+            <span class="track-play" aria-hidden="true">
+              <svg class="track-icon-play" viewBox="0 0 16 16"><path d="M4.5 2.8v10.4L13 8 4.5 2.8Z" fill="currentColor"/></svg>
+              <svg class="track-icon-pause" viewBox="0 0 16 16"><path d="M4.5 2.8h2.6v10.4H4.5zM8.9 2.8h2.6v10.4H8.9z" fill="currentColor"/></svg>
+            </span>
+          </button>
+
+          <button class="track" type="button" data-src="assets/music/till-when.mp3" data-title="广有射怪鸟事" data-artist="広有射怪鳥事 ～ Till When / 上海爱丽丝幻乐团" aria-label="播放 广有射怪鸟事">
+            <span class="track-index">06</span>
+            <span class="track-info"><strong>广有射怪鸟事</strong><small>広有射怪鳥事 ～ Till When · 上海爱丽丝幻乐团</small></span>
+            <span class="track-time">--:--</span>
+            <span class="track-play" aria-hidden="true">
+              <svg class="track-icon-play" viewBox="0 0 16 16"><path d="M4.5 2.8v10.4L13 8 4.5 2.8Z" fill="currentColor"/></svg>
+              <svg class="track-icon-pause" viewBox="0 0 16 16"><path d="M4.5 2.8h2.6v10.4H4.5zM8.9 2.8h2.6v10.4H8.9z" fill="currentColor"/></svg>
+            </span>
+          </button>
+
+          <button class="track" type="button" data-src="assets/music/dream-battle.mp3" data-title="少女绮想曲" data-artist="少女綺想曲 ～ Dream Battle / 上海爱丽丝幻乐团" aria-label="播放 少女绮想曲">
+            <span class="track-index">07</span>
+            <span class="track-info"><strong>少女绮想曲</strong><small>少女綺想曲 ～ Dream Battle · 上海爱丽丝幻乐团</small></span>
+            <span class="track-time">--:--</span>
+            <span class="track-play" aria-hidden="true">
+              <svg class="track-icon-play" viewBox="0 0 16 16"><path d="M4.5 2.8v10.4L13 8 4.5 2.8Z" fill="currentColor"/></svg>
+              <svg class="track-icon-pause" viewBox="0 0 16 16"><path d="M4.5 2.8h2.6v10.4H4.5zM8.9 2.8h2.6v10.4H8.9z" fill="currentColor"/></svg>
+            </span>
+          </button>
+        </div>
+
+        <div class="player">
+          <audio id="music-audio" preload="none"></audio>
+          <div class="player-head">
+            <span>NOW PLAYING</span>
+            <strong id="player-title">选一首，开始听</strong>
+          </div>
+          <div class="player-controls">
+            <button class="player-toggle" id="player-toggle" type="button" aria-label="播放" disabled>
+              <svg class="player-icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.8v10.4L13 8 4.5 2.8Z" fill="currentColor"/></svg>
+              <svg class="player-icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.8h2.6v10.4H4.5zM8.9 2.8h2.6v10.4H8.9z" fill="currentColor"/></svg>
+            </button>
+            <input class="player-seek" id="player-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="播放进度" disabled>
+            <span class="player-time" id="player-time">0:00 / 0:00</span>
+            <button class="player-mute" id="player-mute" type="button" aria-label="静音" aria-pressed="false" disabled>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 6.2h2.8L8.4 3v10L5.3 9.8H2.5Z" fill="currentColor"/><path d="M10.6 5.2c1.5 1.5 1.5 4.1 0 5.6M12.6 3.2c2.7 2.7 2.7 7 0 9.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><path class="mute-slash" d="m2.4 2.2 11.2 11.6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </button>
+          </div>
+          <p class="player-status" id="player-status" aria-live="polite">点击曲目或播放键开始。</p>
+        </div>
+
+        <p class="column-footnote">曲目版权归原作者与上海爱丽丝幻乐团所有。这里只是私人收藏与试听，不做商业用途。</p>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="index.html">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="22" height="22"></span>
+        <span>鹭仙 <small>LUXIAN</small></span>
+      </a>
+      <p>© <span id="year">2026</span> 鹭仙 · 弦外拾音</p>
+      <a class="back-top" href="#top">BACK TO TOP <span>↑</span></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="music.js"></script>
+</body>
+</html>

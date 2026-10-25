@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="night" data-tone="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>番剧世界 · 鹭仙 — 十五扇门后的故事</title>
+  <meta name="description" content="鹭仙的番剧世界：FX战士久留美、轻音少女、宝可梦、言叶之庭、CLANNAD、辉夜大小姐想让我告白、百变小樱、干物妹！小埋、我的妹妹不可能那么可爱、物语系列、秒速五厘米、败犬女主太多了、命运石之门、魔法少女小圆、某科学的超电磁炮。点击任意一扇门，进入我喜欢的故事。">
+  <meta name="author" content="鹭仙 Luxian">
+  <meta name="theme-color" content="#08070d">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://luxian120.github.io/worlds.html">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/avatar.jpg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="鹭仙 · Luxian">
+  <meta property="og:title" content="番剧世界 · 鹭仙 — 十五扇门后的故事">
+  <meta property="og:description" content="十五部作品，十五种进入方式。点击任意一扇门，进入我喜欢的番剧世界。">
+  <meta property="og:url" content="https://luxian120.github.io/worlds.html">
+  <meta property="og:image" content="https://luxian120.github.io/assets/og-worlds.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="鹭仙的番剧世界：十五扇门后的故事">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="番剧世界 · 鹭仙 — 十五扇门后的故事">
+  <meta name="twitter:description" content="十五部作品，十五种进入方式。点击任意一扇门，进入我喜欢的番剧世界。">
+  <meta name="twitter:image" content="https://luxian120.github.io/assets/og-worlds.png">
+
+  <script>
+    (function () {
+      try {
+        var moods = {
+          day: ['light', '#f5efe5'],
+          rain: ['light', '#e6eff3'],
+          night: ['dark', '#08070d'],
+          bloom: ['light', '#f7eef3']
+        };
+        var saved = localStorage.getItem('luxian-mood');
+        if (!moods[saved]) {
+          var legacy = localStorage.getItem('luxian-theme');
+          saved = legacy === 'light' ? 'day' : legacy === 'dark' ? 'night' : 'night';
+        }
+        if (!moods[saved]) saved = 'night';
+        document.documentElement.setAttribute('data-theme', saved);
+        document.documentElement.setAttribute('data-tone', moods[saved][0]);
+        document.documentElement.style.colorScheme = moods[saved][0] === 'dark' ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', moods[saved][1]);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="worlds.css">
+</head>
+<body class="worlds-page">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <div class="worlds-wallpaper" id="worlds-wallpaper" aria-hidden="true">
+    <div class="wallpaper-slides" id="wallpaper-slides"></div>
+    <canvas class="wallpaper-particles" id="wallpaper-particles"></canvas>
+    <span class="wallpaper-veil"></span>
+  </div>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="art-fx" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="fx-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#08130e"/>
+          <stop offset=".55" stop-color="#050c09"/>
+          <stop offset="1" stop-color="#020504"/>
+        </linearGradient>
+        <pattern id="fx-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M20 0H0V20" fill="none" stroke="#7dffb0" stroke-opacity=".075" stroke-width=".7"/>
+        </pattern>
+        <filter id="fx-glow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="400" height="300" fill="url(#fx-bg)"/>
+      <rect width="400" height="300" fill="url(#fx-grid)"/>
+      <text x="308" y="107" fill="none" stroke="#7dffb0" stroke-opacity=".13" stroke-width="1.2" font-family="Georgia, serif" font-size="92" font-weight="700" letter-spacing="4">FX</text>
+      <path d="M-10 236C42 220 68 182 106 198s66-61 112-38 76-71 132-53 44 7 60 1" fill="none" stroke="#7dffb0" stroke-opacity=".42" stroke-width="1.4"/>
+      <path d="M-10 236C42 220 68 182 106 198s66-61 112-38 76-71 132-53 44 7 60 1" fill="none" stroke="#7dffb0" stroke-opacity=".1" stroke-width="7"/>
+      <g stroke-width="1.1">
+        <g stroke="#ff5d5d" fill="#ff5d5d">
+          <line x1="39" y1="196" x2="39" y2="253"/><rect x="34" y="214" width="10" height="24" fill-opacity=".8"/>
+          <line x1="107" y1="174" x2="107" y2="229"/><rect x="102" y="188" width="10" height="25" fill-opacity=".72"/>
+          <line x1="175" y1="158" x2="175" y2="218"/><rect x="170" y="176" width="10" height="27" fill-opacity=".8"/>
+          <line x1="243" y1="133" x2="243" y2="190"/><rect x="238" y="148" width="10" height="25" fill-opacity=".72"/>
+          <line x1="311" y1="103" x2="311" y2="160"/><rect x="306" y="118" width="10" height="25" fill-opacity=".8"/>
+        </g>
+        <g stroke="#70f0a8" fill="#70f0a8">
+          <line x1="73" y1="185" x2="73" y2="242"/><rect x="68" y="201" width="10" height="26" fill-opacity=".8"/>
+          <line x1="141" y1="169" x2="141" y2="226"/><rect x="136" y="183" width="10" height="27" fill-opacity=".72"/>
+          <line x1="209" y1="144" x2="209" y2="201"/><rect x="204" y="160" width="10" height="25" fill-opacity=".8"/>
+          <line x1="277" y1="121" x2="277" y2="178"/><rect x="272" y="136" width="10" height="25" fill-opacity=".72"/>
+          <line x1="345" y1="92" x2="345" y2="149"/><rect x="340" y="108" width="10" height="25" fill-opacity=".8"/>
+        </g>
+      </g>
+      <circle cx="346" cy="92" r="3.6" fill="#d9ffe8" filter="url(#fx-glow)"/>
+      <circle cx="346" cy="92" r="12" fill="none" stroke="#70f0a8" stroke-opacity=".35"/>
+      <g fill="none" stroke="#ff5d5d" stroke-opacity=".3">
+        <circle cx="331" cy="53" r="25"/><circle cx="331" cy="53" r="34"/>
+      </g>
+      <text x="24" y="48" fill="#70f0a8" fill-opacity=".44" font-family="monospace" font-size="9" letter-spacing="2">USD / JPY</text>
+      <text x="24" y="61" fill="#d9ffe8" fill-opacity=".78" font-family="monospace" font-size="10" letter-spacing="1">148.72  +0.84%</text>
+    </symbol>
+
+    <symbol id="art-kon" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="kon-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#f8e8cf"/>
+          <stop offset=".48" stop-color="#efc9ad"/>
+          <stop offset="1" stop-color="#dca18e"/>
+        </linearGradient>
+        <radialGradient id="kon-sun" cx="50%" cy="50%" r="50%">
+          <stop stop-color="#fff8da" stop-opacity=".95"/>
+          <stop offset="1" stop-color="#fff8da" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="400" height="300" fill="url(#kon-bg)"/>
+      <circle cx="330" cy="58" r="96" fill="url(#kon-sun)"/>
+      <path d="M0 0h140L0 116Z" fill="#fff6df" opacity=".3"/>
+      <g stroke="#8d5b43" stroke-opacity=".25" stroke-width="1">
+        <path d="M-10 222H410"/><path d="M-10 231H410"/><path d="M-10 240H410"/><path d="M-10 249H410"/><path d="M-10 258H410"/>
+      </g>
+      <g fill="#8d5b43">
+        <g transform="translate(65 226)"><ellipse cx="0" cy="0" rx="8" ry="5.5" transform="rotate(-20)"/><path d="M7-2 7-33" stroke="#8d5b43" stroke-width="1.6"/></g>
+        <g transform="translate(174 247)"><ellipse cx="0" cy="0" rx="7" ry="5" transform="rotate(-20)"/><path d="M6-2 6-28" stroke="#8d5b43" stroke-width="1.6"/></g>
+        <g transform="translate(365 214)"><ellipse cx="0" cy="0" rx="8" ry="5.5" transform="rotate(-20)"/><path d="M7-2 7-35" stroke="#8d5b43" stroke-width="1.6"/></g>
+      </g>
+      <g transform="translate(126 162) rotate(-24)">
+        <ellipse cx="0" cy="0" rx="54" ry="43" fill="#9d6048" opacity=".9"/>
+        <ellipse cx="0" cy="0" rx="42" ry="33" fill="#c8815c" opacity=".92"/>
+        <circle cx="0" cy="0" r="13" fill="#4d2c24"/>
+        <circle cx="0" cy="0" r="5" fill="#e8b67d"/>
+        <rect x="38" y="-9" width="105" height="18" rx="5" fill="#6f4030"/>
+        <rect x="136" y="-15" width="42" height="30" rx="4" fill="#4a281f"/>
+        <g stroke="#f1d5a8" stroke-opacity=".65" stroke-width=".8">
+          <path d="M42-5h130"/><path d="M42 0h130"/><path d="M42 5h130"/>
+        </g>
+      </g>
+      <g transform="translate(307 176)">
+        <ellipse cx="0" cy="27" rx="38" ry="8" fill="#8b5b48" opacity=".26"/>
+        <path d="M-30 3h60v17c0 12-10 19-30 19S-30 32-30 20Z" fill="#fff9ee" opacity=".9"/>
+        <path d="M30 7c14-2 19 5 15 12-3 6-9 7-15 5" fill="none" stroke="#fff9ee" stroke-width="4" stroke-opacity=".85"/>
+        <ellipse cx="0" cy="4" rx="30" ry="7" fill="#e8c69a" opacity=".55"/>
+        <path d="M-16-3c-4-14 6-19 2-30M5-4c-5-14 7-20 3-33" fill="none" stroke="#fffaf0" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <g fill="#fff4df" opacity=".6">
+        <circle cx="62" cy="82" r="3"/><circle cx="92" cy="57" r="1.7"/><circle cx="259" cy="66" r="2.4"/><circle cx="381" cy="124" r="2"/><circle cx="44" cy="143" r="1.8"/>
+      </g>
+    </symbol>
+
+    <symbol id="art-pokemon" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="pk-sky" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#84d9ff"/><stop offset=".62" stop-color="#d8f5ff"/><stop offset="1" stop-color="#eafbe4"/>
+        </linearGradient>
+        <linearGradient id="pk-hill" x1="0" y1="0" x2="0" y2="180" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#8ed777"/><stop offset="1" stop-color="#4e9b61"/>
+        </linearGradient>
+      </defs>
+      <rect width="400" height="300" fill="url(#pk-sky)"/>
+      <circle cx="70" cy="56" r="28" fill="#fff5bf" opacity=".9"/>
+      <circle cx="70" cy="56" r="44" fill="#fff5bf" opacity=".22"/>
+      <g fill="#fff" opacity=".65">
+        <ellipse cx="210" cy="54" rx="31" ry="12"/><ellipse cx="235" cy="48" rx="22" ry="14"/><ellipse cx="188" cy="51" rx="19" ry="10"/>
+        <ellipse cx="330" cy="92" rx="22" ry="8"/><ellipse cx="347" cy="88" rx="15" ry="9"/>
+      </g>
+      <path d="M-20 208C60 170 101 196 157 188s94-52 152-32 84 30 111 20v124H-20Z" fill="url(#pk-hill)"/>
+      <path d="M-20 246c70-39 120-30 184-17s128 10 256-25v96H-20Z" fill="#2f7650"/>
+      <path d="M186 300c3-43 17-66 36-82 19 16 33 39 36 82Z" fill="#e9d7a9" opacity=".8"/>
+      <g stroke="#215b3a" stroke-width="2.4" stroke-linecap="round" opacity=".8">
+        <path d="M24 300c-2-25 2-43 12-59M38 300c8-19 14-32 28-43M58 300c-3-18 0-30 7-43M347 300c-3-22 0-37 12-52M362 300c7-17 12-27 24-36M327 300c-5-14-4-25 0-35"/>
+      </g>
+      <g transform="translate(286 151) rotate(10)">
+        <ellipse cx="0" cy="5" rx="58" ry="16" fill="#194331" opacity=".22"/>
+        <circle cx="0" cy="0" r="62" fill="#f8f7f1" stroke="#26272b" stroke-width="4"/>
+        <path d="M-60 0a60 60 0 0 1 120 0Z" fill="#ef4e50" stroke="#26272b" stroke-width="4"/>
+        <rect x="-60" y="-5" width="120" height="10" fill="#26272b"/>
+        <circle cx="0" cy="0" r="20" fill="#f8f7f1" stroke="#26272b" stroke-width="4"/>
+        <circle cx="0" cy="0" r="10" fill="#dce9ed" stroke="#26272b" stroke-width="3"/>
+        <circle cx="-25" cy="-31" r="12" fill="#fff" opacity=".45"/>
+      </g>
+      <g fill="#fff" opacity=".8">
+        <path d="m103 118 3.2 8.8 8.8 3.2-8.8 3.2-3.2 8.8-3.2-8.8-8.8-3.2 8.8-3.2Z"/>
+        <path d="m337 55 2.2 6.2 6.2 2.2-6.2 2.2-2.2 6.2-2.2-6.2-6.2-2.2 6.2-2.2Z"/>
+      </g>
+    </symbol>
+
+    <symbol id="art-garden" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="gd-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#0b211d"/><stop offset=".55" stop-color="#12342b"/><stop offset="1" stop-color="#081713"/>
+        </linearGradient>
+        <radialGradient id="gd-light" cx="50%" cy="32%" r="58%">
+          <stop stop-color="#9ac7a6" stop-opacity=".25"/><stop offset="1" stop-color="#9ac7a6" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="400" height="300" fill="url(#gd-bg)"/>
+      <rect width="400" height="300" fill="url(#gd-light)"/>
+      <g stroke="#b9dfcf" stroke-opacity=".17" stroke-width=".8">
+        <path d="M28-10 10 180M72-10 54 210M118-10 98 150M166-10 148 190M210-10 192 230M254-10 238 170M300-10 282 210M346-10 328 160M390-10 372 220"/>
+        <path d="M48 0 30 220M94 0 78 180M142 0 126 240M236 0 218 210M278 0 262 190M324 0 306 240M370 0 354 200"/>
+      </g>
+      <g opacity=".75">
+        <path d="M69 159A137 137 0 0 1 343 159c-18-6-31 14-50 4-18-10-31 12-50 2-19-10-33 13-52 3-19-10-34 10-53 1-19-9-36 11-55 2-12-6-18 5-14-12Z" fill="#5d4381"/>
+        <path d="M69 159A137 137 0 0 1 343 159" fill="none" stroke="#c4b5fd" stroke-opacity=".55" stroke-width="1.2"/>
+        <g stroke="#bca7ea" stroke-opacity=".34" stroke-width=".8">
+          <path d="M206 29v130M137 45c23 40 41 78 55 114M275 45c-23 40-41 78-55 114"/>
+        </g>
+        <path d="M206 159v58c0 24 29 25 29 5" fill="none" stroke="#d8c9f7" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+      </g>
+      <g fill="none" stroke="#9ed8c3">
+        <ellipse cx="103" cy="263" rx="44" ry="10" stroke-opacity=".25"/>
+        <ellipse cx="103" cy="263" rx="27" ry="6" stroke-opacity=".18"/>
+        <ellipse cx="300" cy="279" rx="55" ry="12" stroke-opacity=".22"/>
+        <ellipse cx="300" cy="279" rx="32" ry="7" stroke-opacity=".15"/>
+      </g>
+      <g fill="#7eb59c" opacity=".45">
+        <path d="M35 207c22-17 38-6 32 10-5 13-25 10-32-10Z"/>
+        <path d="M357 234c-22-16-37-5-31 10 5 13 24 9 31-10Z"/>
+      </g>
+      <g stroke="#d9f2e8" stroke-opacity=".45" stroke-width="1.2" stroke-linecap="round">
+        <path d="M90 96v20M141 68v14M267 80v22M323 48v17M369 111v14"/>
+      </g>
+    </symbol>
+
+    <symbol id="art-clannad" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="cl-bg" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#f4c27f"/><stop offset=".45" stop-color="#e4917d"/><stop offset=".78" stop-color="#a26071"/><stop offset="1" stop-color="#4d355a"/>
+        </linearGradient>
+        <radialGradient id="cl-sun" cx="50%" cy="50%" r="50%">
+          <stop stop-color="#fff1bd" stop-opacity=".95"/><stop offset="1" stop-color="#ffe3a5" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="400" height="300" fill="url(#cl-bg)"/>
+      <circle cx="292" cy="98" r="96" fill="url(#cl-sun)"/>
+      <circle cx="292" cy="98" r="42" fill="#ffe9b8" opacity=".9"/>
+      <g stroke="#ffe7c0" stroke-opacity=".18" stroke-width="1">
+        <path d="M292 98 72 0M292 98 142 0M292 98 222 0M292 98 374 0M292 98 400 52M292 98 400 150M292 98 390 234"/>
+      </g>
+      <path d="M-20 210c74-42 130-31 190-6s137 12 250-35v151H-20Z" fill="#7d4b67" opacity=".72"/>
+      <path d="M-20 248c76-24 137-11 207 5s134 4 233-29v96H-20Z" fill="#3d2b4d" opacity=".9"/>
+      <path d="M165 300c13-34 28-61 49-81 21 21 35 48 47 81Z" fill="#e7b58e" opacity=".32"/>
+      <g transform="translate(195 185)">
+        <path d="M0 45V-54" stroke="#7a5039" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+        <g transform="translate(0 -54)">
+          <circle cx="0" cy="0" r="23" fill="#fff8e8" stroke="#7a5039" stroke-width="1.5"/>
+          <circle cx="-7" cy="-2" r="1.7" fill="#60402e"/><circle cx="7" cy="-2" r="1.7" fill="#60402e"/>
+          <path d="M-5 6c3 3 7 3 10 0" fill="none" stroke="#60402e" stroke-width="1.2" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(0 -21)">
+          <circle cx="0" cy="0" r="22" fill="#f6d0bc" stroke="#7a5039" stroke-width="1.5"/>
+          <circle cx="-6" cy="-2" r="1.6" fill="#60402e"/><circle cx="6" cy="-2" r="1.6" fill="#60402e"/>
+          <path d="M-4 5c3 3 6 3 9 0" fill="none" stroke="#60402e" stroke-width="1.1" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(0 10)">
+          <circle cx="0" cy="0" r="21" fill="#fff0d2" stroke="#7a5039" stroke-width="1.5"/>
+          <circle cx="-6" cy="-2" r="1.5" fill="#60402e"/><circle cx="6" cy="-2" r="1.5" fill="#60402e"/>
+          <path d="M-4 5c3 3 5 3 8 0" fill="none" stroke="#60402e" stroke-width="1.1" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g fill="#ffe9cf" opacity=".55">
+        <ellipse cx="55" cy="70" rx="4" ry="2" transform="rotate(-28 55 70)"/>
+        <ellipse cx="98" cy="113" rx="3" ry="1.6" transform="rotate(18 98 113)"/>
+        <ellipse cx="350" cy="61" rx="4" ry="2" transform="rotate(-35 350 61)"/>
+        <ellipse cx="367" cy="148" rx="3" ry="1.5" transform="rotate(22 367 148)"/>
+        <ellipse cx="110" cy="46" rx="2.4" ry="1.3" transform="rotate(-10 110 46)"/>
+      </g>
+    </symbol>
+
+    <symbol id="art-kaguya" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="kg-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#300a19"/><stop offset=".52" stop-color="#19060f"/><stop offset="1" stop-color="#0b0308"/>
+        </linearGradient>
+        <linearGradient id="kg-gold" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#ffe5a3"/><stop offset="1" stop-color="#b88638"/>
+        </linearGradient>
+        <filter id="kg-glow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="8" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="400" height="300" fill="url(#kg-bg)"/>
+      <text x="22" y="225" fill="none" stroke="#ffdf9a" stroke-opacity=".1" stroke-width="1.2" font-family="'Songti SC', 'SimSun', serif" font-size="170" font-weight="600">恋</text>
+      <circle cx="320" cy="78" r="58" fill="#ffe7b0" opacity=".92" filter="url(#kg-glow)"/>
+      <circle cx="342" cy="62" r="54" fill="#1a0610"/>
+      <g fill="none" stroke="url(#kg-gold)" stroke-opacity=".65">
+        <path d="M63 93c34-23 80-23 112 4M61 93c31 27 77 31 113 15" stroke-width="1.4"/>
+        <path d="M84 74c-10 18-11 39-4 58M120 62c-14 23-18 48-11 72"/>
+      </g>
+      <g transform="translate(122 120) rotate(-12)">
+        <rect x="-49" y="-31" width="98" height="62" rx="4" fill="#8e1c32" stroke="#e5b96e" stroke-width="1.2"/>
+        <path d="m-49-31 49 34 49-34" fill="none" stroke="#e5b96e" stroke-width="1.2"/>
+        <path d="M0 3c-8-13-28-4-28 7 0 13 21 20 28 27 7-7 28-14 28-27 0-11-20-20-28-7Z" fill="#d72d4d" stroke="#ffcc7a" stroke-width=".8"/>
+      </g>
+      <g fill="#ffdf9a">
+        <path d="m87 186 3 9 9 3-9 3-3 9-3-9-9-3 9-3Z" opacity=".8"/>
+        <path d="m345 174 2.3 7 7 2.3-7 2.3-2.3 7-2.3-7-7-2.3 7-2.3Z" opacity=".65"/>
+        <path d="m267 226 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" opacity=".5"/>
+      </g>
+      <g fill="none" stroke="#c64159" stroke-opacity=".38">
+        <circle cx="294" cy="241" r="42"/><circle cx="330" cy="241" r="42"/>
+      </g>
+      <path d="M-20 288c88-16 170-16 250 0M-20 300c88-16 170-16 250 0" stroke="#e5b96e" stroke-opacity=".2" fill="none"/>
+    </symbol>
+
+    <symbol id="art-sakura" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="sk-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#3d172f"/><stop offset=".55" stop-color="#241022"/><stop offset="1" stop-color="#120811"/>
+        </linearGradient>
+        <radialGradient id="sk-light" cx="50%" cy="50%" r="50%">
+          <stop stop-color="#ffd9e8" stop-opacity=".62"/><stop offset="1" stop-color="#ffd9e8" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="sk-soft" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="400" height="300" fill="url(#sk-bg)"/>
+      <circle cx="286" cy="105" r="135" fill="url(#sk-light)"/>
+      <g transform="translate(192 142)" fill="none" stroke="#f8d8e4" stroke-width="1">
+        <circle r="103" stroke-opacity=".45" stroke-dasharray="2 9"/>
+        <circle r="77" stroke-opacity=".3"/>
+        <path d="M0-77 18-24 77 0 18 24 0 77-18 24-77 0-18-24Z" stroke-opacity=".62"/>
+        <circle r="37" stroke-opacity=".5"/>
+      </g>
+      <g transform="translate(77 176) rotate(-18)">
+        <rect x="-35" y="-48" width="70" height="96" rx="7" fill="#fff5f9" stroke="#f5c4d6" stroke-width="1.4" opacity=".94"/>
+        <path d="m0-22 7 15 16 2-12 12 3 16-14-8-14 8 3-16-12-12 16-2Z" fill="#e887a8" opacity=".75"/>
+        <path d="M-20 27h40" stroke="#e887a8" stroke-opacity=".35" stroke-width="1"/>
+      </g>
+      <g transform="translate(132 198) rotate(11)">
+        <rect x="-31" y="-44" width="62" height="88" rx="6" fill="#f9e7ef" stroke="#eeb4cb" stroke-width="1.2" opacity=".88"/>
+        <path d="M-18 17c10-28 24-34 38-40-4 19-14 31-38 40Z" fill="#f3cd7a" opacity=".7"/>
+      </g>
+      <g transform="translate(188 167) rotate(-5)">
+        <rect x="-38" y="-52" width="76" height="104" rx="8" fill="#fff8fb" stroke="#f0adc8" stroke-width="1.4" opacity=".94"/>
+        <circle cx="0" cy="-8" r="19" fill="none" stroke="#d56b93" stroke-width="1.2"/>
+        <path d="M0-23 5-12 17-10 8 0 10 12 0 6-10 12-8 0-17-10-5-12Z" fill="#ef9fba" opacity=".7"/>
+        <path d="M-22 30h44" stroke="#d56b93" stroke-opacity=".35"/>
+      </g>
+      <g filter="url(#sk-soft)">
+        <path d="M295 235 345 97" stroke="#f3cd7a" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="m345 97 5-18 12 13 19-2-11 15 3 19-16-10-17 8 7-17Z" fill="#ffe5a3" opacity=".9"/>
+        <circle cx="345" cy="97" r="22" fill="#ffe5a3" opacity=".22"/>
+      </g>
+      <g fill="#fbd4e2">
+        <ellipse cx="53" cy="96" rx="5" ry="2.5" transform="rotate(-28 53 96)" opacity=".7"/>
+        <ellipse cx="312" cy="47" rx="4" ry="2" transform="rotate(18 312 47)" opacity=".55"/>
+        <ellipse cx="363" cy="173" rx="4" ry="2" transform="rotate(-35 363 173)" opacity=".5"/>
+        <ellipse cx="100" cy="61" rx="3" ry="1.5" transform="rotate(15 100 61)" opacity=".5"/>
+        <ellipse cx="256" cy="245" rx="5" ry="2.3" transform="rotate(22 256 245)" opacity=".45"/>
+      </g>
+      <text x="24" y="50" fill="#f5c4d6" fill-opacity=".48" font-family="Georgia, serif" font-size="9" letter-spacing="2">CARDCAPTOR</text>
+    </symbol>
+
+    <symbol id="art-umaru" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="um-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#f7c982"/><stop offset=".58" stop-color="#e9a661"/><stop offset="1" stop-color="#b9774f"/>
+        </linearGradient>
+        <linearGradient id="um-window" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#28355f"/><stop offset="1" stop-color="#15132b"/>
+        </linearGradient>
+      </defs>
+      <rect width="400" height="300" fill="url(#um-bg)"/>
+      <rect x="254" y="16" width="128" height="124" rx="5" fill="url(#um-window)" stroke="#8d5a3d" stroke-width="5"/>
+      <path d="M318 16v124M254 76h128" stroke="#8d5a3d" stroke-width="4"/>
+      <circle cx="351" cy="44" r="12" fill="#ffe9b0" opacity=".8"/>
+      <path d="M0 247c75-25 125-18 192-5s122 15 208-16v74H0Z" fill="#6f4638" opacity=".35"/>
+      <rect x="67" y="213" width="267" height="12" rx="6" fill="#8d5a3d"/>
+      <path d="M73 223c35 29 63 39 105 24 41-15 70 18 115 4 21-7 39-18 55-28v39c-28 16-56 23-88 23-56 0-84-17-124-10-32 5-49 0-63-8Z" fill="#f3a84f"/>
+      <path d="M75 224c35 29 63 40 105 25 41-15 70 18 115 4 21-7 39-19 55-29" fill="none" stroke="#ffd79b" stroke-width="2" opacity=".7"/>
+      <g transform="translate(263 163)">
+        <circle cx="0" cy="0" r="57" fill="#f7b55f"/>
+        <path d="M-57-16c-8-29 17-49 35-38 11 7 4 24 22 15 19-9 37 4 38 23 1 12-7 18-14 27-15 20-64 24-81 5-6-7-5-19 0-32Z" fill="#f7b55f"/>
+        <ellipse cx="-19" cy="-2" rx="4" ry="5" fill="#553322"/>
+        <ellipse cx="19" cy="-2" rx="4" ry="5" fill="#553322"/>
+        <path d="M-8 12c5 4 11 4 16 0" fill="none" stroke="#553322" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M-40 24c-8 13-7 22 5 24M40 24c8 13 7 22-5 24" fill="none" stroke="#d9863e" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+      </g>
+      <g transform="translate(89 185) rotate(-9)">
+        <path d="M-22-28h44l-4 54c-1 7-7 10-18 10s-17-3-18-10Z" fill="#f26c50" stroke="#ffe1b8" stroke-width="1"/>
+        <path d="M-22-28h44l-8 13H-14Z" fill="#ffd28c"/>
+        <text x="0" y="12" text-anchor="middle" fill="#fff1d0" font-family="Segoe UI, sans-serif" font-size="8" font-weight="700" letter-spacing="1">SNACK</text>
+      </g>
+      <g transform="translate(142 183)">
+        <rect x="-11" y="-31" width="22" height="62" rx="6" fill="#e04f5f"/>
+        <rect x="-11" y="-9" width="22" height="13" fill="#fff2dc"/>
+        <path d="M-6-20h12" stroke="#fff2dc" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+      </g>
+      <g transform="translate(322 207) rotate(-8)">
+        <rect x="-23" y="-12" width="46" height="24" rx="11" fill="#343247" stroke="#f4d4b1" stroke-width="1.2"/>
+        <circle cx="-12" cy="0" r="3.5" fill="#f4d4b1"/>
+        <circle cx="8" cy="-4" r="3" fill="#f08f9d"/>
+        <circle cx="16" cy="4" r="3" fill="#7fd8c3"/>
+      </g>
+      <g fill="#ffe8b7" opacity=".65">
+        <circle cx="55" cy="65" r="3"/><circle cx="217" cy="52" r="2"/><circle cx="365" cy="174" r="2.5"/><circle cx="220" cy="105" r="1.6"/>
+      </g>
+    </symbol>
+
+    <symbol id="art-oreimo" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="or-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#10152e"/><stop offset=".52" stop-color="#16112a"/><stop offset="1" stop-color="#08070f"/>
+        </linearGradient>
+        <linearGradient id="or-door" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#ffe1f0"/><stop offset="1" stop-color="#e45691"/>
+        </linearGradient>
+        <filter id="or-glow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="400" height="300" fill="url(#or-bg)"/>
+      <g fill="#121a33">
+        <rect x="-10" y="84" width="62" height="216"/><rect x="54" y="46" width="48" height="254"/>
+        <rect x="305" y="58" width="52" height="242"/><rect x="359" y="100" width="50" height="200"/>
+      </g>
+      <g opacity=".85">
+        <rect x="12" y="106" width="22" height="92" rx="2" fill="#e45691" opacity=".2"/>
+        <rect x="12" y="106" width="22" height="92" rx="2" fill="none" stroke="#ef6fa6" stroke-opacity=".6"/>
+        <path d="M17 120h12M17 133h12M17 146h8M17 159h12" stroke="#ffd0e0" stroke-width="1.2" opacity=".65"/>
+        <rect x="323" y="86" width="24" height="108" rx="2" fill="#5fd4ee" opacity=".14"/>
+        <rect x="323" y="86" width="24" height="108" rx="2" fill="none" stroke="#83d8ee" stroke-opacity=".55"/>
+        <path d="M329 101h12M329 114h12M329 127h8M329 140h12" stroke="#d4f8ff" stroke-width="1.2" opacity=".58"/>
+      </g>
+      <path d="M0 300 103 169h194l103 131Z" fill="#0d1020"/>
+      <path d="M158 300 191 169h18l33 131Z" fill="#1b1830"/>
+      <g transform="translate(200 137)">
+        <rect x="-57" y="-72" width="114" height="160" rx="3" fill="#0b0914" stroke="#7c5ba7" stroke-width="1.6"/>
+        <rect x="-45" y="-60" width="90" height="136" fill="url(#or-door)" opacity=".72"/>
+        <path d="M-45-60 0 16l45-76Z" fill="#ffe8f3" opacity=".35"/>
+        <path d="M0 16v60" stroke="#ffd0e0" stroke-width="1.2" opacity=".55"/>
+        <circle cx="27" cy="-2" r="3.4" fill="#fff0bd"/>
+        <path d="M-57-72 0-96l57 24" fill="none" stroke="#7c5ba7" stroke-width="1.6"/>
+        <g filter="url(#or-glow)">
+          <path d="M0-116c-8-15-31-5-31 9 0 15 24 23 31 31 7-8 31-16 31-31 0-14-23-24-31-9Z" fill="#ef6fa6" opacity=".9"/>
+        </g>
+      </g>
+      <g fill="#ffd6e6">
+        <path d="m76 190 3 9 9 3-9 3-3 9-3-9-9-3 9-3Z" opacity=".8"/>
+        <path d="m125 228 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" opacity=".6"/>
+        <path d="m302 219 3 9 9 3-9 3-3 9-3-9-9-3 9-3Z" opacity=".7"/>
+      </g>
+      <g transform="translate(73 78) rotate(-8)">
+        <rect x="-30" y="-15" width="60" height="30" rx="14" fill="#25223a" stroke="#c4a6ff" stroke-width="1.2"/>
+        <circle cx="-17" cy="0" r="4" fill="#e45691"/>
+        <circle cx="4" cy="-6" r="3" fill="#83d8ee"/>
+      </g>
+      <text x="310" y="258" fill="#ef6fa6" fill-opacity=".36" font-family="monospace" font-size="7" letter-spacing="2">AKIBA / 2010</text>
+    </symbol>
+
+    <symbol id="art-monogatari" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="mg-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#280b12"/><stop offset=".58" stop-color="#14070b"/><stop offset="1" stop-color="#080407"/>
+        </linearGradient>
+        <filter id="mg-glow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="400" height="300" fill="url(#mg-bg)"/>
+      <text x="218" y="252" fill="none" stroke="#e76478" stroke-opacity=".18" stroke-width="1.2" font-family="'Songti SC', 'SimSun', serif" font-size="200" font-weight="600">語</text>
+      <g stroke="#f3d9d4" stroke-opacity=".28" fill="none">
+        <rect x="42" y="54" width="108" height="62" transform="rotate(-8 42 54)"/>
+        <rect x="274" y="34" width="93" height="48" transform="rotate(9 274 34)"/>
+        <rect x="292" y="192" width="84" height="60" transform="rotate(-6 292 192)"/>
+        <path d="M-10 92H110M330 244H420M24 20V96M382 170V270"/>
+      </g>
+      <g filter="url(#mg-glow)">
+        <path d="M206 128c28-40 88-47 121-6-33 40-93 40-121 6Z" fill="#16070b" stroke="#e76478" stroke-width="1.4"/>
+        <circle cx="295" cy="124" r="31" fill="#c63d54"/>
+        <circle cx="295" cy="124" r="15" fill="#250810"/>
+        <circle cx="285" cy="113" r="7" fill="#ffd9dc" opacity=".8"/>
+      </g>
+      <g stroke="#d9b6ac" stroke-opacity=".5" fill="none">
+        <path d="M170 156 98 224M98 156 170 224"/>
+        <circle cx="98" cy="156" r="7"/><circle cx="170" cy="156" r="7"/>
+        <circle cx="98" cy="224" r="7"/><circle cx="170" cy="224" r="7"/>
+      </g>
+      <g fill="#d94b5d" opacity=".8">
+        <path d="m72 278 2 7 7 2-7 2-2 7-2-7-7-2 7-2Z"/>
+        <path d="m352 74 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" opacity=".6"/>
+      </g>
+      <g fill="none" stroke="#f0d7cf" stroke-opacity=".4" stroke-width=".8">
+        <path d="M28 150h68M28 160h48M28 170h62M28 180h39M28 190h55"/>
+        <path d="M238 280h92M238 288h64"/>
+      </g>
+      <text x="25" y="42" fill="#e76478" fill-opacity=".45" font-family="monospace" font-size="7" letter-spacing="2">ODDITY / 2009</text>
+    </symbol>
+
+    <symbol id="art-fivecm" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="fc-bg" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#6f9ac3"/><stop offset=".48" stop-color="#d5b9d2"/><stop offset=".78" stop-color="#f4c8c6"/><stop offset="1" stop-color="#f8dfcc"/>
+        </linearGradient>
+        <radialGradient id="fc-sun" cx="50%" cy="50%" r="50%">
+          <stop stop-color="#fff4d4" stop-opacity=".95"/><stop offset="1" stop-color="#fff4d4" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="400" height="300" fill="url(#fc-bg)"/>
+      <circle cx="300" cy="86" r="100" fill="url(#fc-sun)"/>
+      <circle cx="300" cy="86" r="33" fill="#fff0c9" opacity=".8"/>
+      <g fill="#fff7ee" opacity=".35">
+        <ellipse cx="91" cy="67" rx="38" ry="10"/><ellipse cx="119" cy="61" rx="23" ry="11"/>
+        <ellipse cx="330" cy="155" rx="30" ry="8"/>
+      </g>
+      <g stroke="#3f4f74" stroke-opacity=".4" stroke-width="1">
+        <path d="M48 0v223M48 90h102M48 137h102M48 184h102M150 76v151M150 110h91M150 147h91M150 184h91M241 94v133"/>
+        <path d="M40 90h112M40 137h112M40 184h112M142 76h100M142 110h100M142 147h100M142 184h100"/>
+      </g>
+      <g fill="#31405f">
+        <path d="M0 231h40v-18h28v13h22v-27h33v21h24v-12h35v23h31v-17h38v16h24v-20h31v22h31v-12h33v-14h30v35H0Z" opacity=".75"/>
+        <rect x="310" y="218" width="9" height="40"/><rect x="304" y="214" width="21" height="6" rx="2"/>
+      </g>
+      <rect x="0" y="246" width="400" height="54" fill="#2d3450" opacity=".82"/>
+      <path d="M0 261h400M0 283h400" stroke="#d9a7a9" stroke-width="1.2" opacity=".55"/>
+      <g stroke="#171c2d" stroke-width="4">
+        <path d="M65 247v53M150 247v53M235 247v53M320 247v53"/>
+      </g>
+      <g fill="#f8f1e5">
+        <path d="M52 247h17v53H52Z"/><path d="M137 247h17v53h-17Z"/><path d="M222 247h17v53h-17Z"/><path d="M307 247h17v53h-17Z"/>
+      </g>
+      <g fill="#f3b9ca">
+        <ellipse cx="68" cy="87" rx="5" ry="2.6" transform="rotate(-28 68 87)"/>
+        <ellipse cx="95" cy="112" rx="4" ry="2" transform="rotate(14 95 112)"/>
+        <ellipse cx="126" cy="57" rx="3.4" ry="1.8" transform="rotate(-20 126 57)"/>
+        <ellipse cx="358" cy="202" rx="4.2" ry="2.1" transform="rotate(23 358 202)"/>
+        <ellipse cx="212" cy="235" rx="3.6" ry="1.8" transform="rotate(-12 212 235)"/>
+        <ellipse cx="280" cy="159" rx="4.6" ry="2.3" transform="rotate(20 280 159)"/>
+      </g>
+      <g fill="none" stroke="#3f4f74" stroke-opacity=".55">
+        <path d="M105 247v-37h13v37M316 247v-45h12v45"/>
+        <circle cx="111" cy="207" r="5"/><circle cx="322" cy="199" r="5"/>
+      </g>
+      <text x="24" y="42" fill="#fff3e6" fill-opacity=".5" font-family="Georgia, serif" font-size="9" letter-spacing="2">5 CM / SEC</text>
+    </symbol>
+
+    <symbol id="art-makeine" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="mk-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#f2c8cf"/><stop offset=".55" stop-color="#e5d6c8"/><stop offset="1" stop-color="#9ec9c8"/>
+        </linearGradient>
+        <linearGradient id="mk-window" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#8fc8df"/><stop offset="1" stop-color="#e9f3ef"/>
+        </linearGradient>
+      </defs>
+      <rect width="400" height="300" fill="url(#mk-bg)"/>
+      <rect x="262" y="18" width="120" height="137" rx="4" fill="url(#mk-window)" stroke="#6b7d79" stroke-width="5"/>
+      <path d="M322 18v137M262 82h120" stroke="#6b7d79" stroke-width="4"/>
+      <circle cx="348" cy="48" r="14" fill="#fff6d8" opacity=".85"/>
+      <g fill="#fff" opacity=".5">
+        <ellipse cx="294" cy="55" rx="17" ry="6"/><ellipse cx="307" cy="51" rx="10" ry="6"/>
+      </g>
+      <path d="M0 238h400v62H0Z" fill="#9d8171" opacity=".32"/>
+      <path d="M-10 252h420M-10 270h420" stroke="#80675b" stroke-opacity=".3"/>
+      <g>
+        <rect x="36" y="192" width="102" height="9" rx="3" fill="#8b6458"/>
+        <rect x="48" y="201" width="7" height="45" fill="#725148"/>
+        <rect x="118" y="201" width="7" height="45" fill="#725148"/>
+        <rect x="43" y="239" width="14" height="6" rx="2" fill="#e9b5bd"/>
+      </g>
+      <g>
+        <rect x="152" y="174" width="96" height="9" rx="3" fill="#8b6458"/>
+        <rect x="162" y="183" width="7" height="55" fill="#725148"/>
+        <rect x="232" y="183" width="7" height="55" fill="#725148"/>
+      </g>
+      <g transform="translate(200 137)">
+        <path d="M0 13c-12-19-43-7-43 12 0 20 31 31 43 44 12-13 43-24 43-44 0-19-31-31-43-12Z" fill="#e47691" stroke="#fff4f2" stroke-width="1.4"/>
+        <path d="m-20 21 36 15" stroke="#ffe9da" stroke-width="5" opacity=".8"/>
+        <path d="m-16 32 9-4M5 25l9-4" stroke="#fff4f2" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(307 188)">
+        <rect x="-35" y="-16" width="70" height="46" rx="5" fill="#f6d38f" stroke="#8b6458" stroke-width="1.2"/>
+        <path d="M-28-9h56v20h-56Z" fill="#d85d67" opacity=".8"/>
+        <path d="M-20 2h15M4 2h16" stroke="#fff3dc" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(90 135)">
+        <rect x="-15" y="-20" width="46" height="35" rx="4" fill="#4f6d6e" stroke="#f6e8d6" stroke-width="1.2"/>
+        <text x="8" y="5" text-anchor="middle" fill="#f8e9d4" font-family="Georgia, serif" font-size="18">0</text>
+      </g>
+      <g fill="#f6e4d2" opacity=".8">
+        <circle cx="66" cy="75" r="3"/><circle cx="213" cy="61" r="2"/><circle cx="365" cy="195" r="2.6"/>
+      </g>
+      <text x="22" y="42" fill="#6d5952" fill-opacity=".55" font-family="monospace" font-size="7" letter-spacing="2">MAKEINE / 2024</text>
+    </symbol>
+
+    <symbol id="art-steins" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="sg-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#071216"/><stop offset=".6" stop-color="#0b1f23"/><stop offset="1" stop-color="#060b10"/>
+        </linearGradient>
+        <linearGradient id="sg-screen" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#123238"/><stop offset="1" stop-color="#071518"/>
+        </linearGradient>
+        <filter id="sg-glow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="400" height="300" fill="url(#sg-bg)"/>
+      <g stroke="#6fd6c4" stroke-opacity=".15" fill="none">
+        <path d="M0 48h400M0 96h400M0 144h400M0 192h400M0 240h400M48 0v300M96 0v300M144 0v300M192 0v300M240 0v300M288 0v300M336 0v300"/>
+      </g>
+      <g fill="none" stroke="#d75b66" stroke-opacity=".45">
+        <path d="M-20 240C70 238 68 136 148 134s82-86 168-86 82 58 104 56"/>
+        <path d="M-20 260C80 258 74 158 154 156s84-70 162-70 80 44 104 42" stroke-opacity=".2"/>
+      </g>
+      <g filter="url(#sg-glow)">
+        <rect x="54" y="62" width="218" height="142" rx="12" fill="#0b1417" stroke="#4f8c86" stroke-width="2"/>
+        <rect x="68" y="76" width="190" height="112" rx="6" fill="url(#sg-screen)" stroke="#2c5d5a"/>
+        <text x="163" y="126" text-anchor="middle" fill="#b8f3df" font-family="monospace" font-size="24" letter-spacing="3">1.048596</text>
+        <text x="163" y="148" text-anchor="middle" fill="#6aa99d" font-family="monospace" font-size="7" letter-spacing="2">DIVERGENCE</text>
+        <text x="163" y="168" text-anchor="middle" fill="#d75b66" font-family="monospace" font-size="7" letter-spacing="2">WORLDLINE</text>
+        <g stroke="#6fd6c4" stroke-opacity=".2">
+          <path d="M72 84h182M72 96h182M72 108h182M72 120h182M72 132h182M72 144h182M72 156h182M72 168h182"/>
+        </g>
+      </g>
+      <g>
+        <rect x="294" y="100" width="74" height="66" rx="6" fill="#101b1d" stroke="#446e69"/>
+        <rect x="302" y="110" width="42" height="20" rx="2" fill="#0a1214" stroke="#315b55"/>
+        <circle cx="354" cy="120" r="7" fill="none" stroke="#d75b66" stroke-width="2"/>
+        <circle cx="316" cy="148" r="6" fill="none" stroke="#6fd6c4"/>
+        <path d="M330 148h24M316 160h40" stroke="#4f8c86" stroke-width="2"/>
+      </g>
+      <g fill="#d75b66">
+        <circle cx="320" cy="52" r="3"/>
+        <circle cx="345" cy="62" r="2" opacity=".7"/>
+        <path d="m38 230 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" opacity=".6"/>
+      </g>
+      <g fill="none" stroke="#b8f3df" stroke-opacity=".3">
+        <circle cx="330" cy="238" r="27"/>
+        <path d="M330 210v14M330 252v14M302 238h14M344 238h14M310 218l10 10M340 248l10 10M350 218l-10 10M320 248l-10 10"/>
+      </g>
+      <text x="22" y="42" fill="#6fd6c4" fill-opacity=".5" font-family="monospace" font-size="7" letter-spacing="2">LAB / 2011</text>
+    </symbol>
+
+    <symbol id="art-madoka" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="md-bg" cx="50%" cy="42%" r="70%">
+          <stop stop-color="#3b1634"/><stop offset=".55" stop-color="#190d20"/><stop offset="1" stop-color="#08060f"/>
+        </radialGradient>
+        <linearGradient id="md-gem" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#ffd7ea"/><stop offset=".45" stop-color="#f27bb5"/><stop offset="1" stop-color="#a83f86"/>
+        </linearGradient>
+        <filter id="md-glow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="400" height="300" fill="url(#md-bg)"/>
+      <g fill="none" stroke="#f2b6d7" stroke-opacity=".2">
+        <circle cx="200" cy="150" r="128" stroke-dasharray="2 8"/>
+        <circle cx="200" cy="150" r="95"/>
+        <path d="M200 22v256M72 150h256M109 59l182 182M291 59 109 241"/>
+        <path d="M200 55 282 195H118Z" stroke-opacity=".12"/>
+      </g>
+      <g opacity=".9">
+        <path d="M0 246h400v54H0Z" fill="#0e0916"/>
+        <g fill="#e9d9ef" opacity=".22">
+          <path d="M0 246h50v27H0ZM100 246h50v27h-50ZM200 246h50v27h-50ZM300 246h50v27h-50Z"/>
+          <path d="M50 273h50v27H50ZM150 273h50v27h-50ZM250 273h50v27h-50ZM350 273h50v27h-50Z"/>
+        </g>
+      </g>
+      <g filter="url(#md-glow)">
+        <path d="M200 72c18 24 40 36 40 60 0 27-18 45-40 57-22-12-40-30-40-57 0-24 22-36 40-60Z" fill="url(#md-gem)" stroke="#ffe0b8" stroke-width="2"/>
+        <path d="M200 88c9 14 21 22 21 38 0 16-9 28-21 37-12-9-21-21-21-37 0-16 12-24 21-38Z" fill="#ffd9e9" opacity=".32"/>
+        <circle cx="200" cy="88" r="3" fill="#fff8f0"/>
+      </g>
+      <g fill="none" stroke="#f2b6d7" stroke-opacity=".7">
+        <path d="M137 152c-22-19-49-14-57 4-8 19 15 34 43 31"/>
+        <path d="M263 152c22-19 49-14 57 4 8 19-15 34-43 31"/>
+        <path d="M155 210c-4 22 10 38 29 38M245 210c4 22-10 38-29 38"/>
+      </g>
+      <g fill="#f7cbe0">
+        <circle cx="78" cy="62" r="2.4"/><circle cx="318" cy="88" r="3"/><circle cx="350" cy="196" r="2"/><circle cx="52" cy="188" r="1.8"/>
+      </g>
+      <path d="m324 42 4 12 12 4-12 4-4 12-4-12-12-4 12-4Z" fill="#ffe6b8" opacity=".8"/>
+      <text x="22" y="42" fill="#f2b6d7" fill-opacity=".55" font-family="Georgia, serif" font-size="8" letter-spacing="2">MAGICA / 2011</text>
+    </symbol>
+
+    <symbol id="art-railgun" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="rg-bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#081425"/><stop offset=".52" stop-color="#0b2941"/><stop offset="1" stop-color="#07101e"/>
+        </linearGradient>
+        <radialGradient id="rg-coin" cx="42%" cy="36%" r="70%">
+          <stop stop-color="#fff3bd"/><stop offset=".55" stop-color="#e7b759"/><stop offset="1" stop-color="#9b6827"/>
+        </radialGradient>
+        <filter id="rg-glow" x="-100%" y="-100%" width="300%" height="300%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <rect width="400" height="300" fill="url(#rg-bg)"/>
+      <g fill="#0a1b2e">
+        <path d="M0 226h34v-49h28v30h21v-65h38v52h20v-33h35v62h27v-44h39v45h22v-58h33v54h30v-30h32v-46h36v68h35v-38h27v44H0Z"/>
+      </g>
+      <g fill="#f2cf78" opacity=".55">
+        <rect x="22" y="190" width="4" height="4"/><rect x="74" y="176" width="4" height="4"/><rect x="122" y="156" width="4" height="4"/><rect x="188" y="186" width="4" height="4"/><rect x="246" y="192" width="4" height="4"/><rect x="322" y="158" width="4" height="4"/>
+      </g>
+      <g filter="url(#rg-glow)" stroke="#8fe6ff" stroke-width="2" fill="none">
+        <path d="M42 72 101 129 72 136 124 194 96 151 128 143Z" stroke-linejoin="round"/>
+        <path d="M340 52 294 116l30 4-42 62 21-56-28-5Z" stroke-linejoin="round" opacity=".8"/>
+      </g>
+      <g filter="url(#rg-glow)">
+        <ellipse cx="201" cy="156" rx="64" ry="64" fill="none" stroke="#e8c263" stroke-width="3"/>
+        <circle cx="201" cy="156" r="54" fill="url(#rg-coin)" stroke="#fff1b3" stroke-width="2"/>
+        <path d="M201 122v66M182 141h38M182 160h38M182 179h38" stroke="#6a4a1b" stroke-width="3" opacity=".55"/>
+        <path d="M188 143h26l-7 12h14l-26 26 7-20h-14Z" fill="#fff8db" stroke="#8a5b1f" stroke-width="1"/>
+      </g>
+      <g stroke="#8fe6ff" stroke-opacity=".5" fill="none">
+        <path d="M-10 258h420M-10 276h420"/>
+        <path d="M32 244v56M111 244v56M190 244v56M269 244v56M348 244v56"/>
+      </g>
+      <g fill="#8fe6ff">
+        <circle cx="128" cy="70" r="2.2"/><circle cx="276" cy="88" r="2.8"/><circle cx="322" cy="206" r="2"/><circle cx="66" cy="218" r="1.7"/>
+      </g>
+      <text x="22" y="42" fill="#8fe6ff" fill-opacity=".55" font-family="monospace" font-size="7" letter-spacing="2">RAILGUN / 2009</text>
+    </symbol>
+   </svg>
+
+  <header class="site-header world-header" id="site-header">
+    <nav class="nav container" aria-label="主导航">
+      <a class="brand" href="index.html" aria-label="鹭仙 Luxian，返回首页">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="24" height="24"></span>
+        <span class="brand-name"><strong>鹭仙</strong><small>LUXIAN</small></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html"><span>01</span>首页</a>
+        <a href="index.html#about"><span>02</span>关于</a>
+        <a class="nav-worlds is-active" href="worlds.html" aria-current="page"><span>03</span>番剧世界</a>
+        <a class="nav-music" href="music.html"><span>04</span>弦外拾音</a>
+        <a href="index.html#contact"><span>05</span>联系</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-button github-link" href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 上查看鹭仙">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.07.78 2.15v3.2c0 .3.21.66.8.55A11.5 11.5 0 0 0 12 .7Z"/></svg>
+        </a>
+        <div class="mood-picker" data-mood-picker>
+          <button class="icon-button mood-toggle" type="button" aria-label="切换心情主题" aria-haspopup="true" aria-controls="mood-menu" aria-expanded="false" title="切换心情主题">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.4a1.7 1.7 0 0 0 1-3.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4A8.8 8.8 0 0 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="7.5" cy="10" r="1.2" fill="currentColor"/><circle cx="10.5" cy="6.8" r="1.2" fill="currentColor"/><circle cx="15" cy="7" r="1.2" fill="currentColor"/><circle cx="17.2" cy="11" r="1.2" fill="currentColor"/></svg>
+          </button>
+          <div class="mood-menu" id="mood-menu" role="menu" aria-label="心情主题" hidden>
+            <div class="mood-menu-head"><span>MOOD</span><span>心情主题</span></div>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="day"><span class="mood-swatch" style="--swatch:#d9873d"></span><span class="mood-name">晴<small>DAYLIGHT</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="rain"><span class="mood-swatch" style="--swatch:#5e9db8"></span><span class="mood-name">雨<small>RAIN</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="true" data-mood="night"><span class="mood-swatch" style="--swatch:#a78bfa"></span><span class="mood-name">夜<small>MIDNIGHT</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="bloom"><span class="mood-swatch" style="--swatch:#d778a6"></span><span class="mood-name">花<small>BLOOM</small></span><span class="mood-check">✓</span></button>
+          </div>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <p class="mobile-kicker">MENU <span>/</span> 目录</p>
+      <nav class="mobile-nav" aria-label="移动端导航">
+        <a href="index.html"><span>01</span>首页</a>
+        <a href="index.html#about"><span>02</span>关于</a>
+        <a href="worlds.html"><span>03</span>番剧世界</a>
+        <a href="music.html"><span>04</span>弦外拾音</a>
+        <a href="index.html#contact"><span>05</span>联系</a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <a href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        <p>ShanghaiTech University<br>Computer Science</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="worlds-hero" id="top">
+      <div class="worlds-hero-bg" aria-hidden="true">
+        <span class="wh-orb wh-orb-a"></span>
+        <span class="wh-orb wh-orb-b"></span>
+        <span class="wh-orb wh-orb-c"></span>
+        <span class="wh-grid"></span>
+      </div>
+      <span class="vertical-note" aria-hidden="true">ANIME WORLDS · 2026</span>
+
+      <div class="worlds-hero-inner container">
+        <div class="worlds-hero-copy">
+          <p class="eyebrow reveal"><span class="status-dot"></span>PERSONAL ARCHIVE <span class="eyebrow-slash">/</span> 15 STORIES</p>
+          <h1 class="worlds-title reveal">喜欢的世界，<br><em>不止一个。</em></h1>
+          <p class="worlds-lead reveal">有些故事陪我走过一段时间，后来就住进了心里。这里收藏了十五部我很喜欢的作品，每一扇门后面，都是一小块只属于我的天气。</p>
+          <div class="worlds-hero-actions reveal">
+            <button class="random-button" type="button" data-random>
+              <span>随机进入一个世界</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h2.6c3.8 0 4.8 8 8.8 8H17M14 3l3 3-3 3M3 14h2.6c1.4 0 2.4-1 3.3-2.3M14 11l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="worlds-hint">点击门牌，进入番剧世界</span>
+          </div>
+        </div>
+
+        <div class="worlds-constellation reveal" aria-hidden="true">
+          <span class="constellation-ring ring-a"></span>
+          <span class="constellation-ring ring-b"></span>
+          <span class="constellation-core"><strong>15</strong><small>WORLDS<br>IN MY HEART</small></span>
+          <span class="constellation-dot dot-a"><i>01</i></span>
+          <span class="constellation-dot dot-b"><i>02</i></span>
+          <span class="constellation-dot dot-c"><i>03</i></span>
+          <span class="constellation-dot dot-d"><i>04</i></span>
+          <span class="constellation-dot dot-e"><i>05</i></span>
+          <span class="constellation-dot dot-f"><i>06</i></span>
+          <span class="constellation-dot dot-g"><i>07</i></span>
+          <span class="constellation-dot dot-h"><i>08</i></span>
+          <span class="constellation-dot dot-i"><i>09</i></span>
+          <span class="constellation-dot dot-j"><i>10</i></span>
+          <span class="constellation-dot dot-k"><i>11</i></span>
+          <span class="constellation-dot dot-l"><i>12</i></span>
+          <span class="constellation-dot dot-m"><i>13</i></span>
+          <span class="constellation-dot dot-n"><i>14</i></span>
+          <span class="constellation-dot dot-o"><i>15</i></span>
+        </div>
+      </div>
+
+      <a class="worlds-scroll" href="#worlds" aria-label="向下浏览番剧世界">
+        <span>SCROLL THROUGH THE DOORS</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="worlds-gallery" id="worlds" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="worlds-gallery-head">
+          <div>
+            <p class="worlds-kicker reveal">THE COLLECTION <span>/</span> 十五扇门</p>
+            <h2 id="gallery-title" class="reveal">挑一个世界，<br>推门进去。</h2>
+          </div>
+          <p class="worlds-gallery-note reveal">从交易屏幕的红色心跳，到放学后的一杯热茶。<br>它们看起来很远，其实都住得很近。</p>
+        </header>
+
+        <div class="worlds-toolbar reveal">
+          <div class="filter-group" role="group" aria-label="按心情筛选番剧世界">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">全部 <span>15</span></button>
+            <button class="filter-button" type="button" data-filter="heal" aria-pressed="false">治愈 <span>08</span></button>
+            <button class="filter-button" type="button" data-filter="adventure" aria-pressed="false">冒险 <span>07</span></button>
+            <button class="filter-button" type="button" data-filter="heart" aria-pressed="false">心动 <span>08</span></button>
+          </div>
+          <p class="worlds-count" aria-live="polite"><span id="visible-count">15</span> / 15 <span>WORLDS</span></p>
+        </div>
+
+        <div class="world-grid" data-stagger>
+          <button class="world-card world-card--fx reveal" type="button" data-world="fx" data-categories="adventure" aria-haspopup="dialog" aria-label="进入《FX战士久留美》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-fx"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">01</span><span class="world-card-kind">现实 / RISK</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">FX戦士くるみちゃん</span>
+              <span class="world-card-title">FX战士<br>久留美</span>
+              <span class="world-card-line">把心跳画成 K 线。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>杠杆</span><span>K 线</span><span>24H</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--kon reveal" type="button" data-world="kon" data-categories="heal" aria-haspopup="dialog" aria-label="进入《轻音少女》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-kon"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">02</span><span class="world-card-kind">日常 / AFTER SCHOOL</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">けいおん！</span>
+              <span class="world-card-title">轻音少女</span>
+              <span class="world-card-line">把日常过成一首歌。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>放学后</span><span>茶点</span><span>轻音乐</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--pokemon reveal" type="button" data-world="pokemon" data-categories="heal adventure" aria-haspopup="dialog" aria-label="进入《宝可梦》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-pokemon"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">03</span><span class="world-card-kind">冒险 / START</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">ポケットモンスター</span>
+              <span class="world-card-title">宝可梦</span>
+              <span class="world-card-line">每一次出发，都还来得及。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>伙伴</span><span>地图</span><span>未知</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--garden reveal" type="button" data-world="garden" data-categories="heal heart" aria-haspopup="dialog" aria-label="进入《言叶之庭》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-garden"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">04</span><span class="world-card-kind">恋爱 / RAIN</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">言の葉の庭</span>
+              <span class="world-card-title">言叶之庭</span>
+              <span class="world-card-line">雨把城市调成了静音。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>梅雨</span><span>亭子</span><span>距离</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--clannad reveal" type="button" data-world="clannad" data-categories="heal heart" aria-haspopup="dialog" aria-label="进入《CLANNAD》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-clannad"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">05</span><span class="world-card-kind">家族 / HOME</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">CLANNAD -クラナド-</span>
+              <span class="world-card-title">CLANNAD</span>
+              <span class="world-card-line">先让你笑，再让你懂。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>团子</span><span>坡道</span><span>家人</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--kaguya reveal" type="button" data-world="kaguya" data-categories="heart" aria-haspopup="dialog" aria-label="进入《辉夜大小姐想让我告白》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-kaguya"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">06</span><span class="world-card-kind">恋爱 / GAME</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">かぐや様は告らせたい</span>
+              <span class="world-card-title">辉夜大小姐<br>想让我告白</span>
+              <span class="world-card-line">喜欢，是一场漂亮的博弈。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>学生会</span><span>头脑战</span><span>心跳</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--sakura reveal" type="button" data-world="sakura" data-categories="heal adventure heart" aria-haspopup="dialog" aria-label="进入《百变小樱》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-sakura"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">07</span><span class="world-card-kind">魔法 / CARDS</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">カードキャプターさくら</span>
+              <span class="world-card-title">百变小樱</span>
+              <span class="world-card-line">把不可能，收进一张卡里。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>库洛牌</span><span>魔法</span><span>勇气</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--umaru reveal" type="button" data-world="umaru" data-categories="heal" aria-haspopup="dialog" aria-label="进入《干物妹！小埋》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-umaru"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">08</span><span class="world-card-kind">日常 / HOME</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">干物妹！うまるちゃん</span>
+              <span class="world-card-title">干物妹！<br>小埋</span>
+              <span class="world-card-line">在家，做一只快乐的仓鼠。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>薯片</span><span>可乐</span><span>游戏</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--oreimo reveal" type="button" data-world="oreimo" data-categories="heart" aria-haspopup="dialog" aria-label="进入《我的妹妹不可能那么可爱》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-oreimo"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">09</span><span class="world-card-kind">恋爱 / SECRET</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">俺の妹がこんなに可愛いわけがない</span>
+              <span class="world-card-title">我的妹妹<br>不可能那么可爱</span>
+              <span class="world-card-line">秘密被发现的那天，日常开始偏航。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>秋叶原</span><span>妹妹</span><span>秘密</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--monogatari reveal" type="button" data-world="monogatari" data-categories="adventure" aria-haspopup="dialog" aria-label="进入《物语系列》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-monogatari"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">10</span><span class="world-card-kind">怪异 / WORDS</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">〈物語〉シリーズ</span>
+              <span class="world-card-title">物语系列</span>
+              <span class="world-card-line">所有的怪异，都是人心的回声。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>怪异</span><span>对话</span><span>青春</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--fivecm reveal" type="button" data-world="fivecm" data-categories="heart" aria-haspopup="dialog" aria-label="进入《秒速五厘米》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-fivecm"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">11</span><span class="world-card-kind">距离 / SAKURA</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">秒速5センチメートル</span>
+              <span class="world-card-title">秒速五厘米</span>
+              <span class="world-card-line">樱花落下的速度，是 5 cm/s。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>樱花</span><span>列车</span><span>距离</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--makeine reveal" type="button" data-world="makeine" data-categories="heal heart" aria-haspopup="dialog" aria-label="进入《败犬女主太多了》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-makeine"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">12</span><span class="world-card-kind">恋爱 / LOSERS</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">負けヒロインが多すぎる！</span>
+              <span class="world-card-title">败犬女主太多了</span>
+              <span class="world-card-line">输了恋爱，也不能输掉青春。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>败犬</span><span>便当</span><span>青春</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--steins reveal" type="button" data-world="steins" data-categories="adventure" aria-haspopup="dialog" aria-label="进入《命运石之门》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-steins"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">13</span><span class="world-card-kind">时间 / WORLDLINE</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">STEINS;GATE</span>
+              <span class="world-card-title">命运石之门</span>
+              <span class="world-card-line">世界线会收束，但心意不会。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>时间机器</span><span>世界线</span><span>秋叶原</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--madoka reveal" type="button" data-world="madoka" data-categories="adventure heart" aria-haspopup="dialog" aria-label="进入《魔法少女小圆》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-madoka"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">14</span><span class="world-card-kind">魔法 / LOOP</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">魔法少女まどか☆マギカ</span>
+              <span class="world-card-title">魔法少女小圆</span>
+              <span class="world-card-line">奇迹不是免费的，愿望也有代价。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>魔法</span><span>轮回</span><span>愿望</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+
+          <button class="world-card world-card--railgun reveal" type="button" data-world="railgun" data-categories="adventure heal" aria-haspopup="dialog" aria-label="进入《某科学的超电磁炮》的世界">
+            <span class="world-card-art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-railgun"></use></svg></span>
+            <span class="world-card-veil"></span>
+            <span class="world-card-top"><span class="world-card-index">15</span><span class="world-card-kind">电击 / CITY</span></span>
+            <span class="world-card-body">
+              <span class="world-card-jp">とある科学の超電磁砲</span>
+              <span class="world-card-title">某科学的超电磁炮</span>
+              <span class="world-card-line">硬币飞起的那一刻，城市安静了一秒。</span>
+            </span>
+            <span class="world-card-foot">
+              <span class="world-card-tags"><span>电击</span><span>学园都市</span><span>友情</span></span>
+              <span class="world-card-enter">进入世界 <b>↗</b></span>
+            </span>
+          </button>
+        </div>
+
+        <p class="worlds-empty" hidden>这个心情下暂时没有世界，换一个试试看。</p>
+      </div>
+    </section>
+
+    <section class="worlds-outro">
+      <div class="container worlds-outro-inner reveal">
+        <p class="worlds-kicker">TO BE CONTINUED</p>
+        <h2>故事会继续长出来。</h2>
+        <p>这是一个持续更新的私人收藏。下一扇门，也许会在某个深夜里突然出现。</p>
+        <a class="button button-ghost" href="index.html#contact">和我聊聊 <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="index.html">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="22" height="22"></span>
+        <span>鹭仙 <small>LUXIAN</small></span>
+      </a>
+      <p>© <span id="year">2026</span> 鹭仙 · 十五扇门后的故事</p>
+      <a class="back-top" href="#top">BACK TO TOP <span>↑</span></a>
+    </div>
+  </footer>
+
+  <div class="wallpaper-dock" id="wallpaper-dock">
+    <span class="wallpaper-meta" aria-live="polite">
+      <span class="wallpaper-label">WALLPAPER <b id="wallpaper-number">01</b> / 15</span>
+      <span class="wallpaper-name" id="wallpaper-name">FX战士久留美</span>
+    </span>
+    <button class="wallpaper-switch" type="button" aria-label="随机切换一张番剧壁纸" title="随机换一张番剧壁纸">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h2.6c3.8 0 4.8 8 8.8 8H17M14 3l3 3-3 3M3 14h2.6c1.4 0 2.4-1 3.3-2.3M14 11l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>换一张</span>
+    </button>
+  </div>
+
+  <dialog class="world-dialog" id="world-dialog" aria-labelledby="world-modal-title">
+    <div class="world-modal">
+      <div class="world-stage" id="world-stage" data-world="fx">
+        <span class="world-stage-art" aria-hidden="true">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><use id="world-stage-use" href="#art-fx"></use></svg>
+        </span>
+        <span class="world-stage-shade" aria-hidden="true"></span>
+        <span class="world-stage-grain" aria-hidden="true"></span>
+        <span class="world-stage-top"><span id="world-stage-index">WORLD 01</span><span id="world-stage-kind">现实 / RISK</span></span>
+        <div class="world-stage-content">
+          <p class="world-stage-jp" id="world-stage-jp">FX戦士くるみちゃん</p>
+          <h2 id="world-modal-title">FX战士久留美</h2>
+          <p class="world-stage-en" id="world-stage-en">FX WARRIOR KURUMI</p>
+          <ul class="world-stage-tags" id="world-stage-tags"></ul>
+        </div>
+        <span class="world-stage-coord" id="world-stage-coord">31.18°N / 121.59°E</span>
+      </div>
+
+      <div class="world-panel">
+        <div class="world-panel-top">
+          <span class="world-panel-kicker" id="world-panel-kicker">01 / REALITY</span>
+          <button class="world-close" type="button" aria-label="关闭世界详情">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 4 12 12M16 4 4 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+
+        <div class="world-panel-scroll" id="world-panel-scroll">
+          <p class="world-panel-quote" id="world-quote"></p>
+          <p class="world-panel-intro" id="world-intro"></p>
+
+          <dl class="world-meta" id="world-meta"></dl>
+
+          <div class="world-section">
+            <h3>世界关键词 <small>KEYWORDS</small></h3>
+            <ul class="world-keywords" id="world-keywords"></ul>
+          </div>
+
+          <div class="world-section">
+            <h3>记忆碎片 <small>FRAGMENTS</small></h3>
+            <ol class="world-fragments" id="world-fragments"></ol>
+          </div>
+
+          <div class="world-section world-section--palette">
+            <h3>这个世界的颜色 <small>PALETTE</small></h3>
+            <div class="world-palette" id="world-palette"></div>
+          </div>
+
+          <p class="world-copyright">个人非商业同人展示。作品与角色版权归原作者及制作委员会所有。</p>
+        </div>
+
+        <div class="world-panel-foot">
+          <button class="world-step" type="button" data-step="-1"><span>←</span> 上一站</button>
+          <span class="world-position" id="world-position">01 / 15</span>
+          <button class="world-step" type="button" data-step="1">下一站 <span>→</span></button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+  <script src="worlds.js"></script>
+</body>
+</html>

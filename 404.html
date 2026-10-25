@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="night" data-tone="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 · 这里没有宫门 — 鹭仙</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#08070d">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      try {
+        var moods = {
+          day: ['light', '#f5efe5'],
+          rain: ['light', '#e6eff3'],
+          night: ['dark', '#08070d'],
+          bloom: ['light', '#f7eef3']
+        };
+        var saved = localStorage.getItem('luxian-mood');
+        if (!moods[saved]) {
+          var legacy = localStorage.getItem('luxian-theme');
+          saved = legacy === 'light' ? 'day' : legacy === 'dark' ? 'night' : 'night';
+        }
+        if (!moods[saved]) saved = 'night';
+        document.documentElement.setAttribute('data-theme', saved);
+        document.documentElement.setAttribute('data-tone', moods[saved][0]);
+        document.documentElement.style.colorScheme = moods[saved][0] === 'dark' ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', moods[saved][1]);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="error-page">
+    <div class="error-inner">
+      <a class="error-brand" href="/">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="24" height="24"></span>
+        <span>鹭仙 <small>LUXIAN</small></span>
+      </a>
+      <p class="error-code">404</p>
+      <h1>这里没有宫门。</h1>
+      <p>你走到了一间还没有被建造的房间。<br>回到有光的地方吧。</p>
+      <a class="button button-primary" href="/">回到首页 <span aria-hidden="true">↗</span></a>
+      <p class="error-hint">THE PALACE OF HEART · LOST ROOM</p>
+    </div>
+  </main>
+</body>
+</html>

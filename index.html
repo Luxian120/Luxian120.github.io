@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="night" data-tone="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鹭仙 · Luxian — 在代码与想象之间</title>
+  <meta name="description" content="鹭仙（Luxian）的个人主页。上海科技大学计算机科学方向学生，作品《心之宫》，以及十五部喜欢的番剧世界。">
+  <meta name="author" content="鹭仙 Luxian">
+  <meta name="theme-color" content="#08070d">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://luxian120.github.io/">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/avatar.jpg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="鹭仙 · Luxian">
+  <meta property="og:title" content="鹭仙 · Luxian — 在代码与想象之间">
+  <meta property="og:description" content="上海科技大学计算机科学学生。写代码，也写故事。还收藏了十五个喜欢的番剧世界。">
+  <meta property="og:url" content="https://luxian120.github.io/">
+  <meta property="og:image" content="https://luxian120.github.io/assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="鹭仙的个人主页封面：在代码与想象之间，造一座会呼吸的宫。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="鹭仙 · Luxian — 在代码与想象之间">
+  <meta name="twitter:description" content="上海科技大学计算机科学学生。写代码，也写故事。还收藏了十五个喜欢的番剧世界。">
+  <meta name="twitter:image" content="https://luxian120.github.io/assets/og-cover.png">
+  <meta name="twitter:image:alt" content="鹭仙的个人主页封面">
+
+  <script>
+    (function () {
+      try {
+        var moods = {
+          day: ['light', '#f5efe5'],
+          rain: ['light', '#e6eff3'],
+          night: ['dark', '#08070d'],
+          bloom: ['light', '#f7eef3']
+        };
+        var saved = localStorage.getItem('luxian-mood');
+        if (!moods[saved]) {
+          var legacy = localStorage.getItem('luxian-theme');
+          saved = legacy === 'light' ? 'day' : legacy === 'dark' ? 'night' : 'night';
+        }
+        if (!moods[saved]) saved = 'night';
+        document.documentElement.setAttribute('data-theme', saved);
+        document.documentElement.setAttribute('data-tone', moods[saved][0]);
+        document.documentElement.style.colorScheme = moods[saved][0] === 'dark' ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', moods[saved][1]);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "鹭仙",
+    "alternateName": "Luxian",
+    "url": "https://luxian120.github.io/",
+    "image": "https://luxian120.github.io/assets/avatar.jpg",
+    "description": "上海科技大学计算机科学方向学生，喜欢游戏、视觉与叙事，以及十五部喜欢的番剧世界。",
+    "sameAs": ["https://github.com/Luxian120"],
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "ShanghaiTech University"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="鹭仙 Luxian，返回首页">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="24" height="24"></span>
+        <span class="brand-name"><strong>鹭仙</strong><small>LUXIAN</small></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about" data-nav="about"><span>01</span>关于</a>
+        <a href="#work" data-nav="work"><span>02</span>作品</a>
+        <a class="nav-worlds" href="worlds.html"><span>03</span>番剧世界</a>
+        <a class="nav-music" href="music.html"><span>04</span>弦外拾音</a>
+        <a href="#contact" data-nav="contact"><span>05</span>联系</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-button github-link" href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 上查看鹭仙">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.07.78 2.15v3.2c0 .3.21.66.8.55A11.5 11.5 0 0 0 12 .7Z"/></svg>
+        </a>
+        <div class="mood-picker" data-mood-picker>
+          <button class="icon-button mood-toggle" type="button" aria-label="切换心情主题" aria-haspopup="true" aria-controls="mood-menu" aria-expanded="false" title="切换心情主题">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.4a1.7 1.7 0 0 0 1-3.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4A8.8 8.8 0 0 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="7.5" cy="10" r="1.2" fill="currentColor"/><circle cx="10.5" cy="6.8" r="1.2" fill="currentColor"/><circle cx="15" cy="7" r="1.2" fill="currentColor"/><circle cx="17.2" cy="11" r="1.2" fill="currentColor"/></svg>
+          </button>
+          <div class="mood-menu" id="mood-menu" role="menu" aria-label="心情主题" hidden>
+            <div class="mood-menu-head"><span>MOOD</span><span>心情主题</span></div>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="day"><span class="mood-swatch" style="--swatch:#d9873d"></span><span class="mood-name">晴<small>DAYLIGHT</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="rain"><span class="mood-swatch" style="--swatch:#5e9db8"></span><span class="mood-name">雨<small>RAIN</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="true" data-mood="night"><span class="mood-swatch" style="--swatch:#a78bfa"></span><span class="mood-name">夜<small>MIDNIGHT</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="bloom"><span class="mood-swatch" style="--swatch:#d778a6"></span><span class="mood-name">花<small>BLOOM</small></span><span class="mood-check">✓</span></button>
+          </div>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <p class="mobile-kicker">MENU <span>/</span> 目录</p>
+      <nav class="mobile-nav" aria-label="移动端导航">
+        <a href="#about"><span>01</span>关于</a>
+        <a href="#work"><span>02</span>作品</a>
+        <a href="worlds.html"><span>03</span>番剧世界</a>
+        <a href="music.html"><span>04</span>弦外拾音</a>
+        <a href="#contact"><span>05</span>联系</a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <a href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        <p>ShanghaiTech University<br>Computer Science</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <span class="orb orb-one"></span>
+        <span class="orb orb-two"></span>
+        <span class="orb orb-three"></span>
+        <div class="hero-grid-lines"></div>
+        <span class="hero-watermark">夢</span>
+      </div>
+
+      <span class="vertical-note" aria-hidden="true">PORTFOLIO · 2026 · SHANGHAI</span>
+
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">
+            <span class="status-dot"></span>
+            SHANGHAITECH UNIVERSITY <span class="eyebrow-slash">/</span> COMPUTER SCIENCE
+          </p>
+
+          <h1 class="hero-title reveal">
+            <span class="hero-name">鹭仙</span>
+            <span class="hero-alias">LUXIAN <i></i> PERSONAL PORTFOLIO</span>
+          </h1>
+
+          <p class="hero-statement reveal">在代码与想象之间，<br>造一座<em>会呼吸的宫</em>。</p>
+
+          <p class="hero-intro reveal">I'm Luxian, a computer science student at ShanghaiTech University. I like turning abstract logic into something you can see, touch, and remember.</p>
+
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#work">
+              <span>看看我的作品</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13M4.5 11.5 10 17l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="button button-ghost" href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer">
+              <span>GitHub</span>
+              <span class="arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="hero-meta reveal">
+            <div class="meta-item">
+              <span class="meta-label">BASED IN</span>
+              <span class="meta-value">Shanghai, CN</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">LOCAL TIME</span>
+              <span class="meta-value" id="clock">--:--</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">SIGNATURE</span>
+              <span class="meta-value meta-value--serif">紫伞蓝裙多多良</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="visual-index" aria-hidden="true"><span>PORTRAIT</span><span>001 / 2026</span></div>
+
+          <div class="portrait-stage" data-tilt>
+            <div class="portrait-depth">
+              <div class="portrait-halo" aria-hidden="true"></div>
+              <div class="orbit orbit-outer" aria-hidden="true"><span></span></div>
+              <div class="orbit orbit-inner" aria-hidden="true"></div>
+
+              <div class="portrait-frame">
+                <img src="assets/avatar.jpg" alt="鹭仙的头像：戴着女巫帽的金发少女" width="460" height="460">
+                <span class="portrait-shine" aria-hidden="true"></span>
+              </div>
+
+              <div class="float-tag float-tag--infj" title="INFJ · 提倡者">
+                <span class="tag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20"><path d="M10 2.3 17.3 10 10 17.7 2.7 10Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M10 5.4v9.2M5.4 10h9.2" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity=".65"/></svg>
+                </span>
+                <span class="tag-label">INFJ</span>
+              </div>
+
+              <div class="float-tag float-tag--acg" title="ACG · 动画、漫画与游戏">
+                <span class="tag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20"><rect x="2" y="6" width="16" height="9" rx="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M7 9.5v3M5.5 11h3M13.2 10h.1M15.2 12h.1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                </span>
+                <span class="tag-label">ACG</span>
+              </div>
+
+              <div class="float-tag float-tag--poetry" title="poetry · 诗">
+                <span class="tag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20"><path d="M16.8 3.2C12.6 4.2 9.2 7.1 7.3 12l-2.6 3.1M7.3 12c1.8.4 4.1-.5 5.3-2.2 1.2-1.8 1.7-4.8 4.2-6.6Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.8 17c1.8-.2 3.1-.8 3.8-2" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </span>
+                <span class="tag-label">poetry</span>
+              </div>
+
+              <div class="float-tag float-tag--research" title="research · 研究">
+                <span class="tag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20"><circle cx="8.4" cy="8.4" r="4.8" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m12 12 4.8 4.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                </span>
+                <span class="tag-label">research</span>
+              </div>
+
+              <div class="float-tag float-tag--counseling" title="counseling · 倾听与陪伴">
+                <span class="tag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20"><path d="M3 4.2h14v8.9H9l-4.2 3v-3H3Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M10 9.8c.7-1.1 2.5-.7 2.5.7 0 1.2-1.6 2.1-2.5 2.8-.9-.7-2.5-1.6-2.5-2.8 0-1.4 1.8-1.8 2.5-.7Z" fill="currentColor" opacity=".8"/></svg>
+                </span>
+                <span class="tag-label">counseling</span>
+              </div>
+
+              <div class="float-tag float-tag--vibe" title="vibe coding · 氛围编程">
+                <span class="tag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 20 20"><path d="m6 7.5-3 2.5 3 2.5M14 7.5l3 2.5-3 2.5M11.2 4.5l-2.4 11" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="m16 3 .6 1.6L18.2 5l-1.6.6L16 7.2l-.6-1.6L13.8 5l1.6-.4Z" fill="currentColor"/></svg>
+                </span>
+                <span class="tag-label">vibe coding</span>
+              </div>
+
+              <div class="portrait-caption">
+                <span class="caption-quote">“</span>
+                <p>紫伞蓝裙<br>多多良</p>
+                <small>SIGNATURE / 个人签名</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero-scroll" href="#about" aria-label="向下滚动到关于我">
+        <span>SCROLL TO EXPLORE</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>DREAMER</span><i></i><span>STORYTELLER</span><i></i><span>SHANGHAITECH</span><i></i><span>ANIME WORLDS</span><i></i><span>MAKE IT REAL</span><i></i><span>KEEP EXPLORING</span><i></i>
+        </div>
+        <div class="marquee-group">
+          <span>DREAMER</span><i></i><span>STORYTELLER</span><i></i><span>SHANGHAITECH</span><i></i><span>ANIME WORLDS</span><i></i><span>MAKE IT REAL</span><i></i><span>KEEP EXPLORING</span><i></i>
+        </div>
+      </div>
+    </div>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-index">01</span>
+          <span class="section-label">ABOUT <i>/</i> 关于我</span>
+          <span class="section-rule"></span>
+          <span class="section-side">A LITTLE BIT PERSONAL</span>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-heading reveal">
+            <p class="about-kicker">CODE WITH A LITTLE MAGIC</p>
+            <h2>写代码，<br>也写故事。</h2>
+            <div class="about-signature">
+              <span class="signature-line"></span>
+              <span>鹭仙 <small>LUXIAN</small></span>
+            </div>
+          </div>
+
+          <div class="about-body">
+            <p class="about-lead reveal">梨花木羽，燕子空楼。谁看去，日暮里，碧水惊秋。</p>
+            <p class="reveal">我喜欢在逻辑与图形之间来回穿梭，也慢慢发现，真正打动人的往往不是复杂度，而是恰到好处的细节。</p>
+            <p class="reveal">这个页面，是我留给互联网的一小块自留地。这里会持续长出新的项目、笔记，和未完成的实验。</p>
+
+            <div class="facts" data-stagger>
+              <div class="fact reveal">
+                <span class="fact-index">01</span>
+                <span class="fact-label">坐标</span>
+                <strong>上海 · 中国</strong>
+              </div>
+              <div class="fact reveal">
+                <span class="fact-index">02</span>
+                <span class="fact-label">学校</span>
+                <strong>上海科技大学</strong>
+              </div>
+              <div class="fact reveal">
+                <span class="fact-index">03</span>
+                <span class="fact-label">方向</span>
+                <strong>计算机科学</strong>
+              </div>
+              <div class="fact reveal">
+                <span class="fact-index">04</span>
+                <span class="fact-label">状态</span>
+                <strong>持续构建中</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-index">02</span>
+          <span class="section-label">SELECTED WORK <i>/</i> 作品</span>
+          <span class="section-rule"></span>
+          <span class="section-side">THINGS I MADE</span>
+        </header>
+
+        <div class="work-heading">
+          <h2 class="reveal">一些认真做过的梦。</h2>
+          <p class="reveal">从课程作业开始，把每一个“如果”都做成可以运行的版本。</p>
+        </div>
+
+        <article class="project-card reveal">
+          <div class="project-art" aria-hidden="true">
+            <div class="art-grid"></div>
+            <div class="art-moon"></div>
+
+            <svg class="art-maze" viewBox="0 0 620 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="mazeStroke" x1="0" y1="0" x2="620" y2="720" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#8B5CF6" stop-opacity=".12"/>
+                  <stop offset=".48" stop-color="#C4B5FD" stop-opacity=".46"/>
+                  <stop offset="1" stop-color="#7DD3FC" stop-opacity=".12"/>
+                </linearGradient>
+                <radialGradient id="mazeFade" cx="50%" cy="52%" r="62%">
+                  <stop offset="0" stop-color="#fff" stop-opacity=".95"/>
+                  <stop offset=".7" stop-color="#fff" stop-opacity=".55"/>
+                  <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                </radialGradient>
+                <mask id="mazeMask">
+                  <rect width="620" height="720" fill="url(#mazeFade)"/>
+                </mask>
+                <filter id="playerGlow" x="-180%" y="-180%" width="460%" height="460%">
+                  <feGaussianBlur stdDeviation="7" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+
+              <g mask="url(#mazeMask)" stroke="url(#mazeStroke)" stroke-width="1.15">
+                <path d="M-12 92H86V38H228V150H352V62H512V184H632"/>
+                <path d="M-12 214H154V152H276V252H412V172H526V298H632"/>
+                <path d="M-12 344H92V278H206V388H332V312H468V428H632"/>
+                <path d="M-12 470H146V404H260V512H386V436H500V548H632"/>
+                <path d="M-12 596H92V532H224V642H344V576H468V688H632"/>
+                <path d="M110 -12V84H204V198H96V312H190V426H118V540H216V732"/>
+                <path d="M390 -12V72H286V190H388V282H316V398H420V504H344V620H438V732"/>
+                <path d="M516 -12V116H568V230H486V340H570V452H500V566H572V700"/>
+                <path d="M20 28H58V64H20V28Z"/>
+                <path d="M250 330H288V366H250V330Z"/>
+                <path d="M540 630H578V666H540V630Z"/>
+              </g>
+
+              <path id="playerPath" d="M58 662H168V552H286V464H404V356H522V248H430V140H340" stroke="#C4B5FD" stroke-opacity=".18" stroke-width="1.2" stroke-dasharray="3 9"/>
+              <g filter="url(#playerGlow)">
+                <circle r="4.5" fill="#F5F0FF">
+                  <animateMotion dur="11s" repeatCount="indefinite" rotate="auto">
+                    <mpath href="#playerPath"/>
+                  </animateMotion>
+                </circle>
+              </g>
+              <circle cx="58" cy="662" r="2" fill="#7DD3FC" opacity=".65"/>
+              <circle cx="340" cy="140" r="10" fill="none" stroke="#C4B5FD" stroke-opacity=".32"/>
+              <circle cx="340" cy="140" r="3.5" fill="#F0ABFC">
+                <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" repeatCount="indefinite"/>
+              </circle>
+            </svg>
+
+            <div class="art-topline"><span>CS101H / COURSEWORK</span><span>2026</span></div>
+            <div class="art-level"><span>LV.</span>06</div>
+
+            <div class="art-title">
+              <span class="art-title-cn">心之宫</span>
+              <span class="art-title-en">THE PALACE OF HEART</span>
+            </div>
+
+            <p class="art-quote">“去拥抱那个<br>独特的你吧。”</p>
+
+            <span class="art-corner art-corner-tl"></span>
+            <span class="art-corner art-corner-tr"></span>
+            <span class="art-corner art-corner-bl"></span>
+            <span class="art-corner art-corner-br"></span>
+          </div>
+
+          <div class="project-content">
+            <p class="project-eyebrow"><span></span>FEATURED PROJECT</p>
+            <h3>心之宫</h3>
+            <p class="project-sub">THE PALACE OF HEART</p>
+            <p class="project-desc">一款迷宫逃脱游戏。随机生成的迷宫、会循着脚步追来的敌人、六阶段 BOSS 战与双人对抗，被装进一个关于自我认知与接纳的故事里。</p>
+
+            <div class="project-facts">
+              <div class="project-fact"><strong>06</strong><span>BOSS 技能阶段</span></div>
+              <div class="project-fact"><strong>02</strong><span>游戏模式</span></div>
+              <div class="project-fact"><strong>05</strong><span>普通关卡</span></div>
+            </div>
+
+            <div class="project-footer">
+              <a class="project-link" href="https://github.com/Luxian120/CS101H-" target="_blank" rel="noopener noreferrer">
+                <span>查看源码与开发手记</span>
+                <span class="link-circle">
+                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </a>
+              <small class="project-note">ShanghaiTech · CS101H</small>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-extras" data-stagger>
+          <article class="mini-card reveal">
+            <div class="mini-card-top">
+              <span class="mini-label">NEXT / 未命名</span>
+              <span class="mini-symbol" aria-hidden="true">＋</span>
+            </div>
+            <div>
+              <h4>下一件作品，<br>正在发芽。</h4>
+              <p>关于系统、视觉，和一点点不讲道理的诗意。等它长大一点，再带来见你。</p>
+            </div>
+            <span class="mini-foot"><i></i>IN PROGRESS</span>
+          </article>
+
+          <a class="mini-card mini-card-link reveal" href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer">
+            <div class="mini-card-top">
+              <span class="mini-label">GITHUB / @LUXIAN120</span>
+              <svg class="mini-github" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.07.78 2.15v3.2c0 .3.21.66.8.55A11.5 11.5 0 0 0 12 .7Z"/></svg>
+            </div>
+            <div>
+              <h4>代码、实验，<br>和未完成的草稿。</h4>
+              <p>它们都会先出现在 GitHub。欢迎来看看，我正在把什么变成现实。</p>
+            </div>
+            <span class="mini-foot mini-foot--link">OPEN GITHUB <span>↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="worlds-teaser-section" aria-labelledby="worlds-teaser-title">
+      <div class="container">
+        <a class="worlds-teaser reveal" href="worlds.html">
+          <span class="teaser-copy">
+            <span class="teaser-kicker">INTERACTIVE ARCHIVE <span>/</span> 番剧世界</span>
+            <h2 id="worlds-teaser-title">十五个世界，<br><em>等你推门。</em></h2>
+            <span class="teaser-desc">FX 的心跳、放学后的茶、雨里的亭子，还有一场不肯先告白的恋爱。点进去，看看我喜欢的番剧世界。</span>
+            <span class="teaser-cta">进入番剧世界 <b>↗</b></span>
+          </span>
+          <span class="teaser-visual" aria-hidden="true">
+            <span class="teaser-ring teaser-ring-a"></span>
+            <span class="teaser-ring teaser-ring-b"></span>
+            <span class="teaser-core"><strong>15</strong><small>WORLDS</small></span>
+            <span class="teaser-dot teaser-dot-a">01</span>
+            <span class="teaser-dot teaser-dot-b">02</span>
+            <span class="teaser-dot teaser-dot-c">03</span>
+            <span class="teaser-dot teaser-dot-d">04</span>
+            <span class="teaser-dot teaser-dot-e">05</span>
+            <span class="teaser-dot teaser-dot-f">06</span>
+            <span class="teaser-dot teaser-dot-g">07</span>
+            <span class="teaser-dot teaser-dot-h">08</span>
+            <span class="teaser-dot teaser-dot-i">09</span>
+            <span class="teaser-dot teaser-dot-j">10</span>
+            <span class="teaser-dot teaser-dot-k">11</span>
+            <span class="teaser-dot teaser-dot-l">12</span>
+            <span class="teaser-dot teaser-dot-m">13</span>
+            <span class="teaser-dot teaser-dot-n">14</span>
+            <span class="teaser-dot teaser-dot-o">15</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <span class="contact-glow" aria-hidden="true"></span>
+          <span class="contact-watermark" aria-hidden="true">@</span>
+
+          <p class="contact-kicker">03 / SAY HELLO</p>
+
+          <div class="contact-main">
+            <h2>来找我聊聊，<br><span>哪种方式都好。</span></h2>
+            <div class="contact-copy">
+              <p>如果你也对代码、游戏，或者那些不太好归类的想法感兴趣，欢迎来打个招呼。</p>
+              <a class="contact-cta" href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer">
+                <span><small class="contact-cta-label">GITHUB</small>@Luxian120</span>
+                <span class="contact-arrow">↗</span>
+              </a>
+              <a class="school-link" href="https://www.shanghaitech.edu.cn/" target="_blank" rel="noopener noreferrer">ShanghaiTech University <span>↗</span></a>
+
+              <div class="contact-channels">
+                <a class="contact-channel" href="https://wpa.qq.com/msgrd?v=3&amp;uin=3431982965&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer" aria-label="通过 QQ 联系鹭仙，号码 3431982965">
+                  <span class="channel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 20 20"><path d="M3 4h14v8.5H9.2L5 16v-3.5H3Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="7.2" cy="8.2" r=".9" fill="currentColor"/><circle cx="10" cy="8.2" r=".9" fill="currentColor"/><circle cx="12.8" cy="8.2" r=".9" fill="currentColor"/></svg>
+                  </span>
+                  <span class="channel-copy"><small>QQ</small><strong>3431982965</strong></span>
+                  <span class="channel-arrow">↗</span>
+                </a>
+                <a class="contact-channel" href="mailto:taoran2025@shanghaitech.edu.cn" aria-label="给鹭仙发送邮件，taoran2025@shanghaitech.edu.cn">
+                  <span class="channel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="12" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="m3.2 5 6.8 5.2L16.8 5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span class="channel-copy"><small>EMAIL</small><strong>taoran2025@shanghaitech.edu.cn</strong></span>
+                  <span class="channel-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-foot">
+            <span>OPEN TO CONVERSATIONS</span>
+            <span>SHANGHAI · UTC+8</span>
+            <span>LAST UPDATED / OCT 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#top">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="22" height="22"></span>
+        <span>鹭仙 <small>LUXIAN</small></span>
+      </a>
+      <p>© <span id="year">2026</span> 鹭仙 · 在代码与想象之间</p>
+      <a class="back-top" href="#top">BACK TO TOP <span>↑</span></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

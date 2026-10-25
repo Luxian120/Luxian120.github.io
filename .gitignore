@@ -1,0 +1,12 @@
+# Local preview / QA artifacts
+.edge-profile/
+.edge-cdp/
+.edge-test/
+preview-*.png
+qa-*.png
+og.html
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
