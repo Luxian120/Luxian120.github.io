@@ -17,6 +17,7 @@
 - **Work**：课程项目《心之宫》，一个关于迷宫、追逐与自我接纳的游戏
 - **番剧世界**：十五部喜欢的作品，可筛选、随机进入、查看详情与切换上一站 / 下一站
 - **弦外拾音**：音乐分区，「幻想音帖」与「物语夜奏」两个专栏，共九首歌，可在网页内直接播放
+- **孤灯诗话**：诗集分区，第一个专栏「夜风集」收录第一首《未曾理解的夜》，展示标题、正文与自评
 - **动态壁纸**：番剧世界页使用十五部作品的原创动态氛围壁纸，右下角按钮可随机切换
 - **Contact**：GitHub、QQ、邮箱与学校链接
 - **细节**：四种心情主题（晴 / 雨 / 夜 / 花）、响应式移动菜单、滚动进度、入场动画、头像视差
@@ -47,6 +48,15 @@
 - 九首 MP3 合计约 110 MB，使用按需加载：只有点击曲目后才开始下载音频
 - 曲目版权归原作者与演唱者所有，仅作个人收藏与试听
 
+### 孤灯诗话
+
+![孤灯诗话预览](assets/poetry-preview.jpg)
+
+- 第一个专栏「夜风集」，第一首《未曾理解的夜》
+- 页面直接展示诗歌标题、正文与「鹭仙自评」，不需要额外弹窗
+- 诗集页沿用四种心情主题，与全站导航、字体和页脚保持一致
+- 后续新增诗歌时，按 `poem-sheet` 结构复制并在「夜风集」中追加
+
 页面里的项目信息来自公开的 GitHub 主页与 `CS101H-` 仓库 README；番剧信息来自各作品公开资料；其余文案是可以自由改写的个人介绍。
 
 ## 本地预览
@@ -70,10 +80,12 @@ GitHub Pages 的用户主页仓库必须命名为 **`Luxian120.github.io`**。
    - `index.html`
    - `worlds.html`
    - `music.html`
+   - `poetry.html`
    - `404.html`
    - `styles.css`
    - `worlds.css`
    - `music.css`
+   - `poetry.css`
    - `script.js`
    - `worlds.js`
    - `music.js`
@@ -103,6 +115,7 @@ git push -u origin main
 - **番剧数据**：在 `worlds.js` 顶部的 `WORLDS` 对象中修改标题、年份、关键词、记忆碎片与配色；门牌卡片本身在 `worlds.html` 里。
 - **番剧插画**：十五张 SVG 氛围图在 `worlds.html` 顶部 `<svg class="svg-sprite">` 中，按 `art-fx`、`art-kon` 等 ID 查找。
 - **音乐**：专栏卡片与文案在 `music.html`，曲目数据在 `music.js` 的 `COLUMNS` 对象中；新增音频时，把文件放进 `assets/music/`，再补一条曲目数据。
+- **诗歌**：在 `poetry.html` 中按 `poem-sheet` 结构添加新诗，标题、正文与自评都放在同一篇文章里。
 - **头像**：替换 `assets/avatar.jpg`（正方形图片最合适）。
 - **主题色**：`styles.css` 顶部的 `:root`（夜）与 `[data-theme="day"]`、`[data-theme="rain"]`、`[data-theme="bloom"]` 变量。
 - **项目卡片**：搜索 `project-card`，修改标题、描述、数据与 GitHub 链接。
@@ -117,10 +130,12 @@ git push -u origin main
 ├── index.html          主页结构与文案
 ├── worlds.html         番剧世界画廊、SVG 插画与详情弹窗
 ├── music.html          弦外拾音、幻想音帖与音频播放面板
+├── poetry.html         孤灯诗话、夜风集与诗歌正文 / 自评
 ├── 404.html            自定义 404 页面
 ├── styles.css          主页样式、主题与响应式
 ├── worlds.css          番剧世界页面与弹窗样式
 ├── music.css           弦外拾音页面与播放面板样式
+├── poetry.css          孤灯诗话页面与诗歌排版
 ├── script.js           主题、菜单、滚动与入场动画
 ├── worlds.js           番剧数据、筛选、随机与弹窗交互
 ├── music.js            专栏弹层、曲目切换与音频播放控制
@@ -132,6 +147,7 @@ git push -u origin main
 │   ├── preview.jpg     主页 README 预览
 │   ├── worlds-preview.jpg  番剧世界 README 预览
 │   ├── music-preview.jpg   弦外拾音 README 预览
+│   ├── poetry-preview.jpg  孤灯诗话 README 预览
 │   └── music/
 │       ├── wind-goddess.mp3       风神少女 (Short Version)
 │       ├── usagi-white-flag.mp3   宇佐大人的白旗

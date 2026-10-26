@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="night" data-tone="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>孤灯诗话 · 鹭仙 — 夜风集</title>
+  <meta name="description" content="鹭仙的诗集分区「孤灯诗话」，第一个专栏「夜风集」，第一首《未曾理解的夜》：标题、正文与自评。">
+  <meta name="author" content="鹭仙 Luxian">
+  <meta name="theme-color" content="#08070d">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://luxian120.github.io/poetry.html">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/avatar.jpg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="鹭仙 · Luxian">
+  <meta property="og:title" content="孤灯诗话 · 鹭仙 — 夜风集">
+  <meta property="og:description" content="一盏灯，几页纸。第一首《未曾理解的夜》，附上鹭仙的自评。">
+  <meta property="og:url" content="https://luxian120.github.io/poetry.html">
+  <meta property="og:image" content="https://luxian120.github.io/assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="孤灯诗话 · 鹭仙">
+  <meta name="twitter:description" content="一盏灯，几页纸。第一首《未曾理解的夜》，附上鹭仙的自评。">
+  <meta name="twitter:image" content="https://luxian120.github.io/assets/og-cover.png">
+
+  <script>
+    (function () {
+      try {
+        var moods = {
+          day: ['light', '#f5efe5'],
+          rain: ['light', '#e6eff3'],
+          night: ['dark', '#08070d'],
+          bloom: ['light', '#f7eef3']
+        };
+        var saved = localStorage.getItem('luxian-mood');
+        if (!moods[saved]) {
+          var legacy = localStorage.getItem('luxian-theme');
+          saved = legacy === 'light' ? 'day' : legacy === 'dark' ? 'night' : 'night';
+        }
+        if (!moods[saved]) saved = 'night';
+        document.documentElement.setAttribute('data-theme', saved);
+        document.documentElement.setAttribute('data-tone', moods[saved][0]);
+        document.documentElement.style.colorScheme = moods[saved][0] === 'dark' ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', moods[saved][1]);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="poetry.css">
+</head>
+<body class="poetry-page">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="主导航">
+      <a class="brand" href="index.html" aria-label="鹭仙 Luxian，返回首页">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="24" height="24"></span>
+        <span class="brand-name"><strong>鹭仙</strong><small>LUXIAN</small></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html"><span>01</span>首页</a>
+        <a href="index.html#about"><span>02</span>关于</a>
+        <a class="nav-worlds" href="worlds.html"><span>03</span>番剧世界</a>
+        <a class="nav-music" href="music.html"><span>04</span>弦外拾音</a>
+        <a class="nav-poetry is-active" href="poetry.html" aria-current="page"><span>05</span>孤灯诗话</a>
+        <a href="index.html#contact"><span>06</span>联系</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-button github-link" href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 上查看鹭仙">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.07.78 2.15v3.2c0 .3.21.66.8.55A11.5 11.5 0 0 0 12 .7Z"/></svg>
+        </a>
+        <div class="mood-picker" data-mood-picker>
+          <button class="icon-button mood-toggle" type="button" aria-label="切换心情主题" aria-haspopup="true" aria-controls="mood-menu" aria-expanded="false" title="切换心情主题">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.4a1.7 1.7 0 0 0 1-3.1 1.7 1.7 0 0 1 1-3.1H17a4 4 0 0 0 4-4A8.8 8.8 0 0 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="7.5" cy="10" r="1.2" fill="currentColor"/><circle cx="10.5" cy="6.8" r="1.2" fill="currentColor"/><circle cx="15" cy="7" r="1.2" fill="currentColor"/><circle cx="17.2" cy="11" r="1.2" fill="currentColor"/></svg>
+          </button>
+          <div class="mood-menu" id="mood-menu" role="menu" aria-label="心情主题" hidden>
+            <div class="mood-menu-head"><span>MOOD</span><span>心情主题</span></div>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="day"><span class="mood-swatch" style="--swatch:#d9873d"></span><span class="mood-name">晴<small>DAYLIGHT</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="rain"><span class="mood-swatch" style="--swatch:#5e9db8"></span><span class="mood-name">雨<small>RAIN</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="true" data-mood="night"><span class="mood-swatch" style="--swatch:#a78bfa"></span><span class="mood-name">夜<small>MIDNIGHT</small></span><span class="mood-check">✓</span></button>
+            <button class="mood-option" type="button" role="menuitemradio" aria-checked="false" data-mood="bloom"><span class="mood-swatch" style="--swatch:#d778a6"></span><span class="mood-name">花<small>BLOOM</small></span><span class="mood-check">✓</span></button>
+          </div>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <p class="mobile-kicker">MENU <span>/</span> 目录</p>
+      <nav class="mobile-nav" aria-label="移动端导航">
+        <a href="index.html"><span>01</span>首页</a>
+        <a href="index.html#about"><span>02</span>关于</a>
+        <a href="worlds.html"><span>03</span>番剧世界</a>
+        <a href="music.html"><span>04</span>弦外拾音</a>
+        <a href="poetry.html"><span>05</span>孤灯诗话</a>
+        <a href="index.html#contact"><span>06</span>联系</a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <a href="https://github.com/Luxian120" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        <p>ShanghaiTech University<br>Computer Science</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="poetry-hero" id="top">
+      <div class="container poetry-hero-inner">
+        <div class="poetry-hero-copy">
+          <p class="eyebrow reveal"><span class="status-dot"></span>POETRY AFTER DARK <span class="eyebrow-slash">/</span> 01</p>
+          <h1 class="poetry-title reveal">
+            <span class="poetry-title-cn">孤灯诗话</span>
+            <small>POETRY AFTER DARK</small>
+          </h1>
+          <p class="poetry-lead reveal">一盏灯，几页纸。把那些在夜里没有说出口的话，留在这里。<em>不急着被读懂。</em></p>
+
+          <div class="poetry-meta-row reveal">
+            <span class="poetry-meta"><span>COLLECTIONS</span><strong>01</strong></span>
+            <span class="poetry-meta"><span>POEMS</span><strong>01</strong></span>
+            <span class="poetry-meta"><span>STATUS</span><strong>未寄出</strong></span>
+          </div>
+
+          <div class="poetry-hero-actions reveal">
+            <a class="button button-primary" href="#night-wind">读第一首 <span>↓</span></a>
+            <small>孤灯不灭，诗慢慢写</small>
+          </div>
+        </div>
+
+        <div class="poetry-lamp reveal" aria-hidden="true">
+          <svg viewBox="0 0 520 520">
+            <defs>
+              <linearGradient id="poem-window" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#182236"/><stop offset=".58" stop-color="#0d1524"/><stop offset="1" stop-color="#080c14"/>
+              </linearGradient>
+              <linearGradient id="poem-paper" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#f2dfc4"/><stop offset="1" stop-color="#c9ae8e"/>
+              </linearGradient>
+              <radialGradient id="poem-glow" cx="50%" cy="40%" r="55%">
+                <stop stop-color="#ffe4a8" stop-opacity=".9"/><stop offset="1" stop-color="#ffe4a8" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="poem-blur" x="-80%" y="-80%" width="260%" height="260%">
+                <feGaussianBlur stdDeviation="9" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <rect x="66" y="64" width="388" height="388" rx="4" fill="url(#poem-window)" stroke="#6d5a4b" stroke-width="5"/>
+            <path d="M260 64v388M66 258h388" stroke="#6d5a4b" stroke-width="4"/>
+            <circle cx="356" cy="154" r="52" fill="#e8c47d" opacity=".18"/>
+            <circle cx="356" cy="154" r="34" fill="#f2d69d" opacity=".82"/>
+            <g fill="#f2d69d" opacity=".55">
+              <circle cx="118" cy="114" r="1.8"/><circle cx="154" cy="144" r="1.2"/><circle cx="210" cy="106" r="1.4"/>
+              <circle cx="324" cy="224" r="1.2"/><circle cx="410" cy="198" r="1.5"/><circle cx="90" cy="222" r="1.2"/>
+            </g>
+            <g fill="#060a10" opacity=".9">
+              <path d="M66 358h34v-28h28v18h24v-43h36v33h20v-19h31v39h25v-27h33v32h20v-40h30v33h21v-21h34v43Z"/>
+            </g>
+            <g fill="#e8c47d" opacity=".38">
+              <rect x="106" y="337" width="3" height="4"/><rect x="164" y="322" width="3" height="4"/>
+              <rect x="250" y="345" width="3" height="4"/><rect x="326" y="327" width="3" height="4"/>
+              <rect x="392" y="316" width="3" height="4"/>
+            </g>
+            <g class="lamp-rain" stroke="#b8d9e8" stroke-opacity=".35" stroke-width="1">
+              <path d="m96 92-13 42M150 74l-16 52M210 88l-12 38M286 70l-14 46M336 88l-12 36M430 82l-16 50M476 96l-12 38"/>
+              <path d="m84 194-10 30M198 212l-11 34M372 240l-13 40M468 226l-10 30"/>
+            </g>
+
+            <g filter="url(#poem-blur)">
+              <path d="M260 0v104" stroke="#8c7258" stroke-width="3"/>
+              <path d="M206 118h108l-15 54h-78Z" fill="#2c211d" stroke="#c6a273" stroke-width="2"/>
+              <ellipse cx="260" cy="172" rx="123" ry="78" fill="url(#poem-glow)" class="lamp-ray"/>
+              <circle cx="260" cy="182" r="12" fill="#ffdc90"/>
+            </g>
+            <g fill="#171019">
+              <path d="M184 326h154l-10 74H194Z"/>
+              <path d="M178 398h166v12H178Z"/>
+            </g>
+            <g>
+              <path d="M208 346h94v58h-94Z" fill="url(#poem-paper)" transform="rotate(-4 208 346)"/>
+              <path d="M218 358h60M218 369h48M218 380h57M218 391h38" stroke="#6f5847" stroke-opacity=".55" stroke-width="1.4"/>
+            </g>
+            <g fill="#e9c77f">
+              <path d="M420 302v-24c0-4 3-7 7-7h2v4h-2c-2 0-3 1-3 3v24Z"/>
+              <path d="M432 302v-24c0-4 3-7 7-7h2v4h-2c-2 0-3 1-3 3v24Z"/>
+              <circle cx="420" cy="304" r="4"/><circle cx="432" cy="304" r="4"/>
+            </g>
+            <rect x="54" y="52" width="412" height="412" fill="none" stroke="#f0d8b4" stroke-opacity=".14"/>
+          </svg>
+          <span class="poetry-lamp-caption">NIGHT WIND / 01</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="poetry-collection" id="night-wind" aria-labelledby="night-wind-title">
+      <div class="container">
+        <header class="poetry-collection-head reveal">
+          <div>
+            <p class="eyebrow"><span class="status-dot"></span>COLLECTION 01 <span class="eyebrow-slash">/</span> 夜风集</p>
+            <h2 id="night-wind-title">夜风集</h2>
+          </div>
+          <p class="poetry-collection-intro">写给夜、旧事，和一点说不清的东西。第一首《未曾理解的夜》。</p>
+          <span class="poetry-collection-index">01 POEM / 2026</span>
+        </header>
+
+        <article class="poem-sheet reveal">
+          <header class="poem-head">
+            <span class="poem-number">01</span>
+            <div>
+              <h3>未曾理解的夜</h3>
+              <p class="poem-byline">鹭仙 · 2026 / 夜</p>
+            </div>
+            <span class="poem-mark">NIGHT WIND / 01</span>
+          </header>
+
+          <div class="poem-layout">
+            <div class="poem-body">
+              <p class="poem-stanza">今宵无月，灯火将阑，<br>咖啡未尽，眉宇渐黯。<br>窗外万家俱寂，独自凭栏，<br>任一城风露，与旧梦相看。</p>
+              <p class="poem-stanza">前尘回潮，泊于心岸<br>零落经年，欲拾已难。<br>曾谓流光，皆付因缘聚散。<br>后来始知，去者难返。</p>
+              <p class="poem-stanza">长街尽处，灯影渐暗，<br>所谓迷津，未必无路可还；<br>只是来时故我，早随风散，<br>纵逢旧门，也难寻旧欢。</p>
+              <p class="poem-stanza">尘寰诸相，未必可参，<br>目之所及，皆经心染。<br>偏执一瞬，便作定案，<br>及至灯尽，此身亦难自判。</p>
+              <p class="poem-stanza">待长夜渐深，流火微寒，<br>方知佳人不死，只会凋残；<br>未曾理解，几度期晚，<br>与往昔隔灯相看，只轻轻一叹。</p>
+            </div>
+
+            <aside class="poem-note" aria-label="鹭仙自评">
+              <p class="poem-note-label">鹭仙自评</p>
+              <p>大概是写夜的吧。</p>
+              <p>不过夜这种东西，越写越不像夜，最后反而像是白昼遗留下来的影子（绷）。</p>
+              <p>至于究竟是旧事没有散，还是自己从未离开，那就很难说了（雾）。</p>
+              <p>人看见的东西，多少都会沾上一点自己的颜色，所以到最后，连“看清了”这件事本身也未必可信。</p>
+              <p>写到最后也没弄明白什么。<br>不过没弄明白，或许才比较接近答案。<br>或许是写人？我也不知道。</p>
+              <p>——大概就是这种诗吧（笑）。</p>
+              <p class="poem-note-sign">鹭仙 / 自评</p>
+            </aside>
+          </div>
+
+          <footer class="poem-footer">
+            <span>孤灯诗话 · 夜风集</span>
+            <span>第一首 · 写于某个没有答案的夜里</span>
+          </footer>
+        </article>
+
+        <p class="poetry-next">下一首诗，等某个夜里再写。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="index.html">
+        <span class="brand-mark"><img src="assets/mark.svg" alt="" width="22" height="22"></span>
+        <span>鹭仙 <small>LUXIAN</small></span>
+      </a>
+      <p>© <span id="year">2026</span> 鹭仙 · 孤灯诗话</p>
+      <a class="back-top" href="#top">BACK TO TOP <span>↑</span></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

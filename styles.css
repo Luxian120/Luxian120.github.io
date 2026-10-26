@@ -413,6 +413,14 @@ h4 {
   background: linear-gradient(90deg, var(--pink), var(--violet));
 }
 
+.nav-links a.nav-poetry span {
+  color: var(--green);
+}
+
+.nav-links a.nav-poetry::after {
+  background: linear-gradient(90deg, var(--green), var(--blue));
+}
+
 .nav-actions {
   display: flex;
   flex-shrink: 0;
@@ -679,6 +687,25 @@ h4 {
 
 .mobile-menu.is-open .mobile-nav a:nth-child(5) {
   transition-delay: 0.32s;
+}
+
+.mobile-menu.is-open .mobile-nav a:nth-child(6) {
+  transition-delay: 0.38s;
+}
+
+@media (max-width: 520px) {
+  .mobile-menu {
+    padding: calc(var(--header-h) + 24px) 24px 24px;
+  }
+
+  .mobile-nav a {
+    padding: 14px 0;
+    font-size: 38px;
+  }
+
+  .mobile-menu-foot {
+    padding-top: 28px;
+  }
 }
 
 .mobile-menu-foot {
