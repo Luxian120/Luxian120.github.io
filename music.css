@@ -274,13 +274,19 @@
   line-height: 1.8;
 }
 
+.music-column-list {
+  display: flex;
+  max-width: 980px;
+  flex-direction: column;
+  gap: 24px;
+  margin: 40px auto 0;
+}
+
 .music-column-card {
   position: relative;
   display: grid;
   grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
   width: 100%;
-  max-width: 980px;
-  margin: 40px auto 0;
   overflow: hidden;
   border: 1px solid var(--line-strong);
   border-radius: 30px;
@@ -826,6 +832,14 @@
 
 .music-lock {
   overflow: hidden;
+}
+
+.column-quote {
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.7;
 }
 
 .column-footnote {
